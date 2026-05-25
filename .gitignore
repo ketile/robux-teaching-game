@@ -1,0 +1,21 @@
+# Windows-spesifikke filer
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE-innstillinger og lokale logger
+.vscode/
+.idea/
+*.log
+.gemini/
+
+# Systemfiler for macOS (hvis prosjektet åpnes der)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Eventuelle fremtidige node_modules
+node_modules/
+dist/
+.env
+.env.local

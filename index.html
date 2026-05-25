@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Læringsspill - Robux Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Anime/Kawaii look -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- HEADER / ROBUX BANK -->
+        <header id="main-header" class="hidden">
+            <div class="user-profile">
+                <div class="avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                <span id="display-name">Spiller</span>
+            </div>
+            <div class="robux-bank">
+                <img src="robux.svg" alt="Robux" class="robux-icon">
+                <span id="robux-balance">0</span> / 1000
+            </div>
+        </header>
+
+        <!-- VIEW: LOGIN -->
+        <section id="view-login" class="view active-view">
+            <div class="card login-card bounce-in">
+                <h1>Velkommen! ✨</h1>
+                
+                <!-- Returning user flow -->
+                <div id="login-returning-user-container" class="hidden">
+                    <p style="font-size: 1.25rem; margin-bottom: 20px;">Vil du fortsette som <strong id="returning-username" style="color: var(--primary-hover);">Spiller</strong>?</p>
+                    <button id="btn-continue-user" class="btn-primary" style="margin-bottom: 12px; width: 100%;">Ja, start spillet! <i class="fa-solid fa-rocket"></i></button>
+                    <button id="btn-switch-user" class="btn-secondary btn-small" style="width: 100%;">Logg inn som en annen 👤</button>
+                </div>
+                
+                <!-- New user flow -->
+                <div id="login-new-user-container">
+                    <p style="margin-bottom: 15px;">Skriv inn navnet ditt for å lagre Robux-fremdriften din!</p>
+                    <input type="text" id="login-username" placeholder="Skriv inn brukernavn...">
+                    <button id="btn-login" class="btn-primary" style="margin-top: 15px; width: 100%;">Start Spillet! <i class="fa-solid fa-play"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: DASHBOARD -->
+        <section id="view-dashboard" class="view hidden">
+            <div class="dashboard-header fade-in">
+                <h2>Velg et fag å øve på! 📚</h2>
+            </div>
+            <!-- Mode Selector -->
+            <div class="mode-selector-container fade-in">
+                <div class="mode-selector">
+                    <button id="btn-mode-practice" class="mode-btn active" onclick="app.setGameMode('practice')">Øvingsmodus 🌟</button>
+                    <button id="btn-mode-test" class="mode-btn" onclick="app.setGameMode('test')">Prøvemodus 📝</button>
+                </div>
+            </div>
+            <div class="subject-grid fade-in">
+                <button class="subject-card subject-math" onclick="app.startGame('math')">
+                    <i class="fa-solid fa-calculator"></i>
+                    <h3>Regning</h3>
+                </button>
+                <button class="subject-card subject-english" onclick="app.startGame('english')">
+                    <i class="fa-solid fa-language"></i>
+                    <h3>Engelsk</h3>
+                </button>
+                <button class="subject-card subject-reading" onclick="app.startGame('reading')">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Lesing</h3>
+                </button>
+            </div>
+            
+            <div class="admin-section fade-in">
+                <button id="btn-show-admin" class="btn-secondary btn-small"><i class="fa-solid fa-gear"></i> Foreldre-innstillinger</button>
+            </div>
+        </section>
+
+        <!-- VIEW: GAME -->
+        <section id="view-game" class="view hidden">
+            <div class="game-header">
+                <button id="btn-back-dashboard" class="btn-secondary btn-small" onclick="app.showView('dashboard')"><i class="fa-solid fa-arrow-left"></i> Tilbake</button>
+                <button id="btn-exit-review" class="btn-danger btn-small hidden" onclick="app.exitReview()"><i class="fa-solid fa-xmark"></i> Avslutt gjennomgang</button>
+                
+                <div id="game-timer" class="timer-container hidden">
+                    ⏱️ <span id="timer-countdown">15:00</span>
+                </div>
+                
+                <div id="game-flag-box" class="flag-box hidden">
+                    <button id="btn-flag-question" class="btn-flag" onclick="app.toggleFlag()"><i class="fa-regular fa-flag"></i> Flagg</button>
+                </div>
+                
+                <div id="streak-box" class="streak-container">
+                    🔥 <span id="streak-counter">0</span> på rad!
+                </div>
+            </div>
+            <div class="card game-card slide-up">
+                <div class="progress-bar">
+                    <div id="level-progress" class="progress-fill"></div>
+                </div>
+                
+                <div id="passage-container" class="passage-box hidden">
+                    <p id="passage-text"></p>
+                </div>
+                
+                <div id="audio-container" class="audio-box hidden">
+                    <button id="btn-play-audio" class="btn-audio"><i class="fa-solid fa-volume-high"></i> Spill av lydklipp</button>
+                    <p class="audio-hint">Hør godt etter, og svar på spørsmålet under!</p>
+                </div>
+                
+                <div id="image-container" class="image-box hidden">
+                    <img id="task-image" src="" alt="Oppgavebilde">
+                </div>
+                
+                <h2 id="question-text" class="question-text">Laster oppgave...</h2>
+                
+                <!-- Format 1: Vanlig flervalg (Multiple Choice) -->
+                <div id="options-container" class="options-grid">
+                    <!-- Buttons injected by JS -->
+                </div>
+                
+                <!-- Format 2: Fritekst (Input) -->
+                <div id="input-container" class="input-box hidden">
+                    <input type="text" id="text-answer-input" placeholder="Skriv svaret her..." />
+                    <button id="btn-submit-input" class="btn-submit">Svar</button>
+                </div>
+                
+                <!-- Format 3: Nedtrekkslister inni tekst (Dropdowns) -->
+                <div id="dropdown-container" class="dropdown-box hidden">
+                    <p id="dropdown-text"></p>
+                    <button id="btn-submit-dropdown" class="btn-submit">Svar</button>
+                </div>
+                
+                <!-- Format 4: Matriser (Sann/Usann) -->
+                <div id="matrix-container" class="matrix-box hidden">
+                    <table class="matrix-table" id="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Påstand</th>
+                                <th>Riktig</th>
+                                <th>Galt</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-body"></tbody>
+                    </table>
+                    <button id="btn-submit-matrix" class="btn-submit">Svar</button>
+                </div>
+                
+                <!-- Format 5: Sortering (Sorting) -->
+                <div id="sorting-container" class="sorting-box hidden">
+                    <p class="instruction-hint" style="margin-bottom: 15px; font-style: italic; color: #666;">Klikk på elementene for å flytte dem, og arranger dem i riktig rekkefølge (fra venstre til høyre):</p>
+                    <div id="sorting-list" class="sorting-list">
+                        <!-- Buttons injected by JS -->
+                    </div>
+                    <button id="btn-submit-sorting" class="btn-submit">Svar</button>
+                </div>
+                
+                <!-- Format 6: Par-kobling (Matching) -->
+                <div id="matching-container" class="matching-box hidden">
+                    <p class="instruction-hint" style="margin-bottom: 15px; font-style: italic; color: #666;">Koble sammen ordene som betyr det samme. Klikk på ett ord i hver kolonne:</p>
+                    <div class="matching-grid">
+                        <div id="matching-left" class="matching-column"></div>
+                        <div id="matching-right" class="matching-column"></div>
+                    </div>
+                    <button id="btn-submit-matching" class="btn-submit">Svar</button>
+                </div>
+                
+                <!-- Format 7: Tekst-markering (Word Clicker) -->
+                <div id="word-clicker-container" class="word-clicker-box hidden">
+                    <p class="instruction-hint" style="margin-bottom: 15px; font-style: italic; color: #666;">Klikk direkte på det ordet i teksten du mener er svaret på spørsmålet over:</p>
+                    <p id="word-clicker-text" class="word-clicker-text"></p>
+                    <button id="btn-submit-word-clicker" class="btn-submit">Svar</button>
+                </div>
+                
+                <!-- Feedback Box -->
+                <div id="feedback-message" class="feedback-message hidden">
+                    <h3 id="feedback-title">Riktig! +1 Robux</h3>
+                    <p id="feedback-desc">Bra jobba!</p>
+                    
+                    <div id="feedback-explanation" class="explanation-box hidden">
+                        <h4><i class="fa-solid fa-lightbulb"></i> Læring / Tips</h4>
+                        <p id="explanation-text">Her kommer forklaringen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fixed Bottom Action Bar -->
+            <div id="game-bottom-bar" class="game-bottom-bar hidden">
+                <!-- Practice Mode Actions -->
+                <div id="practice-actions" class="bottom-action-group">
+                    <span id="practice-progress-text" class="practice-progress-text">Oppgave 1 av 10</span>
+                    <button id="btn-next-question" class="btn-primary" style="margin: 0; width: auto;" disabled>Neste oppgave <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                
+                <!-- Test/Review Mode Actions -->
+                <div id="test-actions" class="bottom-action-group hidden">
+                    <button id="btn-prev-question" class="btn-secondary" onclick="app.prevQuestion()"><i class="fa-solid fa-arrow-left"></i> Forrige</button>
+                    <div id="question-navigator" class="question-navigator-compact">
+                        <!-- Circles injected by JS -->
+                    </div>
+                    <button id="btn-next-question-test" class="btn-secondary" onclick="app.nextQuestionTest()">Neste <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: SUMMARY -->
+        <section id="view-summary" class="view hidden">
+            <div class="card summary-card bounce-in">
+                <h2>Oppsummering av prøven 📝</h2>
+                <p>Gå over svarene dine før du leverer.</p>
+                
+                <div id="summary-grid" class="summary-grid">
+                    <!-- Table/list of questions with status injected by JS -->
+                </div>
+                
+                <div class="summary-actions">
+                    <button id="btn-back-to-test" class="btn-secondary" onclick="app.backToTest()"><i class="fa-solid fa-pen"></i> Tilbake til prøven</button>
+                    <button id="btn-submit-test" class="btn-primary btn-submit-test" onclick="app.submitTest()">Lever og se resultat 🚀</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: RESULT -->
+        <section id="view-result" class="view hidden">
+            <div class="card result-card bounce-in">
+                <h1 id="result-title">Prøve fullført! 🎉</h1>
+                <div class="result-stats">
+                    <p class="score-display">Dine poeng: <strong id="result-score">0 / 0</strong></p>
+                    <div class="robux-earned-display">
+                        <img src="robux.svg" alt="Robux" class="robux-icon">
+                        Spilleren tjente: <span id="result-robux-earned">0</span> Robux!
+                    </div>
+                </div>
+                
+                <div class="result-actions">
+                    <button id="btn-review-test" class="btn-primary" onclick="app.startReview()">Gå gjennom svarene og se fasit <i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button id="btn-result-finish" class="btn-secondary" onclick="app.showView('dashboard')">Ferdig <i class="fa-solid fa-house"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- STREAK ANIMATION OVERLAYS -->
+        <div id="streak-5-overlay" class="streak-overlay hidden">
+            <h1 class="streak-text pulse-text">🔥 5 PÅ RAD! +2 Robux! 🔥</h1>
+        </div>
+        <div id="streak-10-overlay" class="streak-overlay hidden">
+            <h1 class="streak-text rainbow-text bounce-in">🌟 10 PÅ RAD! +5 Robux! 🌟</h1>
+        </div>
+
+        <!-- VIEW: ADMIN MODAL -->
+        <div id="admin-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-modal" onclick="app.closeAdmin()">&times;</span>
+                <h2>⚙️ Foreldre-innstillinger</h2>
+                <div class="admin-panel">
+                    <div class="admin-stat">Totalt opptjent (livstid): <strong id="admin-lifetime">0</strong></div>
+                    <div class="admin-stat">Nåværende saldo: <strong id="admin-current">0</strong></div>
+                    
+                    <div class="admin-action">
+                        <label>Utbetal Robux:</label>
+                        <input type="number" id="payout-amount" placeholder="Antall Robux utbetalt">
+                        <button id="btn-payout" class="btn-danger">Registrer Utbetaling</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Coin Animation Overlay -->
+        <div id="coin-overlay"></div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Firebase SDK (Modular via CDN in firebase-config.js) -->
+    <script src="firebase-config.js"></script>
+    <script src="tasks.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
