@@ -402,6 +402,417 @@ window.taskDatabase = {
             options: ["18", "24", "30", "36"],
             correct: "24",
             explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">Mønster:</span><span class="math-step-formula">Hvert tall dobler seg (tall &times; 2)</span></div><div class="math-step"><span class="math-step-desc">Finn det manglende tallet etter 12:</span><span class="math-step-formula">12 &times; 2 = 24</span></div><div class="math-step"><span class="math-step-desc">Sjekk om mønsteret fortsetter:</span><span class="math-step-formula">24 &times; 2 = 48 (Stemmer!)</span></div></div>'
+        },
+        // --- Oppgaver 51 til 100 ---
+        {
+            level: 1,
+            type: "input",
+            question: "Hva er halvparten av 150? Skriv kun tallet.",
+            correct: "75",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Finn halvparten ved å dele på 2:</span><span class="math-step-formula">150 : 2</span></div><div class="math-step"><span class="math-step-desc">2. Regn ut svaret:</span><span class="math-step-formula">75</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            question: "Hvilket av disse tallene er et oddetall?",
+            options: ["24", "46", "57", "88"],
+            correct: "57",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Sjekk om tallene kan deles på 2 uten rest:</span><span class="math-step-formula">24, 46 og 88 er partall</span></div><div class="math-step"><span class="math-step-desc">2. Sjekk tallet 57:</span><span class="math-step-formula">57 : 2 = 28,5 (Rest)</span></div><div class="math-step"><span class="math-step-desc">3. Konklusjon:</span><span class="math-step-formula">57 er et oddetall</span></div></div>'
+        },
+        {
+            level: 1,
+            type: "dropdown",
+            question: "Hvis du multipliserer 8 med 7, får du ___.",
+            options: ["48", "54", "56", "63"],
+            correct: "56",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Finn produktet ved multiplikasjon:</span><span class="math-step-formula">8 &times; 7</span></div><div class="math-step"><span class="math-step-desc">2. Regn ut svaret:</span><span class="math-step-formula">56</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "Hva er omkretsen til en likesidet trekant der hver side er 9 cm? Skriv kun tallet.",
+            correct: "27",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Likesidet trekant betyr:</span><span class="math-step-formula">3 like lange sider</span></div><div class="math-step"><span class="math-step-desc">2. Adder alle de 3 sidene:</span><span class="math-step-formula">9 + 9 + 9</span></div><div class="math-step"><span class="math-step-desc">3. Regn ut summen:</span><span class="math-step-formula">27 cm</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            question: "Hvor mange tiere er det i tallet 450?",
+            options: ["5", "45", "50", "4"],
+            correct: "45",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Del tallet på 10 for å finne antall tiere:</span><span class="math-step-formula">450 : 10</span></div><div class="math-step"><span class="math-step-desc">2. Svaret blir:</span><span class="math-step-formula">45</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "Finn verdien av Y i denne ligningen: Y - 12 = 18. Skriv kun tallet.",
+            correct: "30",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Legg til 12 på begge sider av likhetstegnet:</span><span class="math-step-formula">Y = 18 + 12</span></div><div class="math-step"><span class="math-step-desc">2. Regn ut verdien til Y:</span><span class="math-step-formula">Y = 30</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "sorting",
+            question: "Sorter brøkene under i rekkefølge fra minst verdi (til venstre) til størst verdi (til høyre):",
+            options: ["2/4", "1/4", "3/4", "4/4"],
+            correct: ["1/4", "2/4", "3/4", "4/4"],
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Siden nevnerne er like (4), sammenlign tellerne:</span><span class="math-step-formula">1 &lt; 2 &lt; 3 &lt; 4</span></div><div class="math-step"><span class="math-step-desc">2. Konklusjon:</span><span class="math-step-formula">1/4 ➔ 2/4 ➔ 3/4 ➔ 4/4</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "matrix",
+            question: "Avgjør om påstandene om 3D-figurer er riktige eller gale:",
+            matrixRows: [
+                { text: "En sylinder har to sirkelformede flater.", correct: "Riktig" },
+                { text: "En kule har åtte hjørner.", correct: "Galt" },
+                { text: "En pyramide har alltid rund bunn.", correct: "Galt" }
+            ],
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">Sylinder:</span><span class="math-step-formula">To sirkeleflater (topp og bunn)</span></div><div class="math-step"><span class="math-step-desc">Kule:</span><span class="math-step-formula">Helt rund, 0 hjørner</span></div><div class="math-step"><span class="math-step-desc">Pyramide:</span><span class="math-step-formula">Har kantet bunn (f.eks. firkantet)</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "En pakke melk inneholder 1,5 liter. Hvor mange desiliter (dl) er det? Skriv kun tallet.",
+            correct: "15",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Finn ut hvor mange dl det er i 1 liter:</span><span class="math-step-formula">1 liter = 10 dl</span></div><div class="math-step"><span class="math-step-desc">2. Multipliser antallet liter med 10:</span><span class="math-step-formula">1,5 &times; 10 = 15 dl</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            question: "Hvilken brøkdel av et år er 3 måneder?",
+            options: ["1/2", "1/3", "1/4", "1/6"],
+            correct: "1/4",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Sett opp som brøk av totale måneder i et år (12):</span><span class="math-step-formula">3/12</span></div><div class="math-step"><span class="math-step-desc">2. Forkort brøken ved å dele på 3 oppe og nede:</span><span class="math-step-formula">(3:3) / (12:3) = 1/4</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "matching",
+            question: "Koble sammen regnestykket med riktig svar:",
+            leftItems: ["4 x 8", "30 : 5", "12 + 19", "45 - 25"],
+            rightItems: ["32", "6", "31", "20"],
+            correct: {
+                "4 x 8": "32",
+                "30 : 5": "6",
+                "12 + 19": "31",
+                "45 - 25": "20"
+            },
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">Multiplikasjon:</span><span class="math-step-formula">4 &times; 8 = 32</span></div><div class="math-step"><span class="math-step-desc">Divisjon:</span><span class="math-step-formula">30 : 5 = 6</span></div><div class="math-step"><span class="math-step-desc">Addisjon:</span><span class="math-step-formula">12 + 19 = 31</span></div><div class="math-step"><span class="math-step-desc">Subtrakson:</span><span class="math-step-formula">45 - 25 = 20</span></div></div>'
+        },
+        {
+            level: 1,
+            type: "input",
+            question: "Hva er 500 minus 135? Skriv kun tallet.",
+            correct: "365",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Trekk fra hundrere først:</span><span class="math-step-formula">500 - 100 = 400</span></div><div class="math-step"><span class="math-step-desc">2. Trekk fra tiere:</span><span class="math-step-formula">400 - 30 = 370</span></div><div class="math-step"><span class="math-step-desc">3. Trekk til slutt fra enere:</span><span class="math-step-formula">370 - 5 = 365</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            question: "Hvor mange kanter (sider) har en terning (kube)?",
+            options: ["6", "8", "12", "24"],
+            correct: "12",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">Sideflater:</span><span class="math-step-formula">6 stykker</span></div><div class="math-step"><span class="math-step-desc">Hjørner:</span><span class="math-step-formula">8 stykker</span></div><div class="math-step"><span class="math-step-desc">Kanter (linjene):</span><span class="math-step-formula">12 stykker</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "Klokken er 15:45. Hvor mange minutter er det igjen til klokken blir 17:00? Skriv kun tallet.",
+            correct: "75",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Tell minutter frem til neste hele time (16:00):</span><span class="math-step-formula">15 minutter</span></div><div class="math-step"><span class="math-step-desc">2. Finn minutter i en hel time til (16:00 til 17:00):</span><span class="math-step-formula">60 minutter</span></div><div class="math-step"><span class="math-step-desc">3. Summen av minutter:</span><span class="math-step-formula">15 + 60 = 75 minutter</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Tallet ___ kan deles på både 2, 3 og 5 uten rest.",
+            options: ["12", "15", "25", "30"],
+            correct: "30",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">30 delt på 2:</span><span class="math-step-formula">30 : 2 = 15</span></div><div class="math-step"><span class="math-step-desc">30 delt på 3:</span><span class="math-step-formula">30 : 3 = 10</span></div><div class="math-step"><span class="math-step-desc">30 delt på 5:</span><span class="math-step-formula">30 : 5 = 6</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            question: "Hva er gjennomsnittet av tallene 4, 8 og 12?",
+            options: ["6", "8", "10", "12"],
+            correct: "8",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Summer sammen alle de 3 tallene:</span><span class="math-step-formula">4 + 8 + 12 = 24</span></div><div class="math-step"><span class="math-step-desc">2. Del summen på antall tall (3):</span><span class="math-step-formula">24 : 3 = 8</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "input",
+            question: "En sykkel koster 1200 kroner. Du får 10 % rabatt. Hvor mange kroner sparer du? Skriv kun tallet.",
+            correct: "120",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Husk at 10 % er det samme som en tiendedel:</span><span class="math-step-formula">10 % = 1/10</span></div><div class="math-step"><span class="math-step-desc">2. Del totalbeløpet på 10 for å finne 10 %:</span><span class="math-step-formula">1200 : 10 = 120 kr</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "sorting",
+            question: "Sorter temperaturene under fra den kaldeste (til venstre) til den varmeste (til høyre):",
+            options: ["-15 °C", "-5 °C", "-20 °C", "5 °C"],
+            correct: ["-20 °C", "-15 °C", "-5 °C", "5 °C"],
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Sammenlign de negative tallene (kaldere betyr mer negativt):</span><span class="math-step-formula">-20 °C &lt; -15 °C &lt; -5 °C</span></div><div class="math-step"><span class="math-step-desc">2. Plasser positive grader til slutt:</span><span class="math-step-formula">5 °C</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "matrix",
+            question: "Vurder påstandene om vinkler og linjer under:",
+            matrixRows: [
+                { text: "En spiss vinkel er større enn 90 grader.", correct: "Galt" },
+                { text: "En rett vinkel er nøyaktig 90 grader.", correct: "Riktig" },
+                { text: "En stang som står loddrett på bakken danner en rett vinkel.", correct: "Riktig" }
+            ],
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">Spiss vinkel:</span><span class="math-step-formula">Mindre enn 90 grader</span></div><div class="math-step"><span class="math-step-desc">Rett vinkel:</span><span class="math-step-formula">Nøyaktig 90 grader</span></div><div class="math-step"><span class="math-step-desc">Loddrett på bakken:</span><span class="math-step-formula">Danner 90 grader (Rett vinkel)</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "Hva blir 250 ganger 4? Skriv kun tallet.",
+            correct: "1000",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Regn ut 250 &times; 2 først:</span><span class="math-step-formula">500</span></div><div class="math-step"><span class="math-step-desc">2. Dobbel svaret en gang til for å gange med 4:</span><span class="math-step-formula">500 &times; 2 = 1000</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            question: "Hvis en pose godteri koster 35 kroner, hvor mange poser kan du maksimalt kjøpe for 150 kroner?",
+            options: ["3", "4", "5", "6"],
+            correct: "4",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Sjekk prisen for 4 poser:</span><span class="math-step-formula">4 &times; 35 kr = 140 kr</span></div><div class="math-step"><span class="math-step-desc">2. Sjekk prisen for 5 poser:</span><span class="math-step-formula">5 &times; 35 kr = 175 kr (for dyrt)</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "input",
+            question: "Regn ut: 10 - 2 x 3 + 4. Husk regnerekkefølge! Skriv kun tallet.",
+            correct: "8",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Multiplikasjon gjøres først (2 &times; 3):</span><span class="math-step-formula">6</span></div><div class="math-step"><span class="math-step-desc">2. Utfør subtraksjon (10 - 6):</span><span class="math-step-formula">4</span></div><div class="math-step"><span class="math-step-desc">3. Utfør addisjon (4 + 4):</span><span class="math-step-formula">8</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Dersom du kaster en vanlig spillterning, er sannsynligheten for å få et partall (2, 4 eller 6) ___.",
+            options: ["1/6", "2/6", "3/6", "5/6"],
+            correct: "3/6",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Tell gunstige utfall (partall: 2, 4, 6):</span><span class="math-step-formula">3 utfall</span></div><div class="math-step"><span class="math-step-desc">2. Finn totale antall mulige sider (1 til 6):</span><span class="math-step-formula">6 sider</span></div><div class="math-step"><span class="math-step-desc">3. Sannsynlighet som brøk:</span><span class="math-step-formula">3/6 (eller 1/2)</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "input",
+            question: "Hva er arealet til et kvadrat der omkretsen er 24 cm? Skriv kun tallet (i kvadratcentimeter, cm²).",
+            correct: "36",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Finn sidelengden (omkrets delt på 4 sider):</span><span class="math-step-formula">24 : 4 = 6 cm</span></div><div class="math-step"><span class="math-step-desc">2. Arealet til kvadratet = side &times; side:</span><span class="math-step-formula">6 &times; 6 = 36 cm²</span></div></div>'
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            question: "Hvilken plassverdi har sifferet 8 i tallet 18 204?",
+            options: ["Enere", "Tiere", "Hundrere", "Tusenere"],
+            correct: "Tusenere",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">8-tallet står på fjerde plass bakfra:</span><span class="math-step-formula">18 204 ➔ 8000 (Tusenere)</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "matching",
+            question: "Koble brøken til venstre med tilsvarende desimaltall til høyre:",
+            leftItems: ["1/2", "1/4", "1/5", "3/4"],
+            rightItems: ["0,5", "0,25", "0,20", "0,75"],
+            correct: {
+                "1/2": "0,5",
+                "1/4": "0,25",
+                "1/5": "0,20",
+                "3/4": "0,75"
+            },
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">Halvparten (1/2):</span><span class="math-step-formula">0,5</span></div><div class="math-step"><span class="math-step-desc">Kvart (1/4):</span><span class="math-step-formula">0,25</span></div><div class="math-step"><span class="math-step-desc">En femtedel (1/5):</span><span class="math-step-formula">0,20</span></div><div class="math-step"><span class="math-step-desc">Tre fjerdedeler (3/4):</span><span class="math-step-formula">0,75</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "En togreise tar 2 timer og 45 minutter. Toget starter kl. 13:10. Hvilket klokkeslett ankommer det? Skriv på formen HH:MM.",
+            correct: "15:55",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Legg til de 2 timene til starttiden:</span><span class="math-step-formula">13:10 + 2t = 15:10</span></div><div class="math-step"><span class="math-step-desc">2. Legg til de 45 minuttene:</span><span class="math-step-formula">15:10 + 45m = 15:55</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            question: "Hvor mange symmetrilinjer har en regulær femkant (pentagon)?",
+            options: ["1", "3", "5", "10"],
+            correct: "5",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">En regulær femkant har like mange symmetrilinjer som sider:</span><span class="math-step-formula">5 sider = 5 symmetrilinjer</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "Hva blir overslaget hvis du runder av tallene til nærmeste tiere og regner ut: 29 + 41 + 19? Skriv kun tallet.",
+            correct: "90",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Rund av 29 til nærmeste tier:</span><span class="math-step-formula">30</span></div><div class="math-step"><span class="math-step-desc">2. Rund av 41 til nærmeste tier:</span><span class="math-step-formula">40</span></div><div class="math-step"><span class="math-step-desc">3. Rund av 19 til nærmeste tier:</span><span class="math-step-formula">20</span></div><div class="math-step"><span class="math-step-desc">4. Adder de avrundede tallene:</span><span class="math-step-formula">30 + 40 + 20 = 90</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Hvis en sirkel har en radius på 5 cm, er diameteren ___ cm.",
+            options: ["2,5", "5", "10", "15"],
+            correct: "10",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">Diameteren er alltid dobbelt så lang som radiusen:</span><span class="math-step-formula">2 &times; 5 cm = 10 cm</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            question: "Hvilket av disse tallene er et primtall?",
+            options: ["21", "23", "25", "27"],
+            correct: "23",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Sjekk delelighet:</span><span class="math-step-formula">21=3x7, 25=5x5, 27=3x9</span></div><div class="math-step"><span class="math-step-desc">2. Sjekk 23 (kan kun deles på 1 og 23):</span><span class="math-step-formula">23 er et primtall</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "Du kjøper 4 brus til 22 kroner stykket og betaler med en 100-kronerseddel. Hvor mange kroner får du igjen? Skriv kun tallet.",
+            correct: "12",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Regn ut hva de 4 brusene koster:</span><span class="math-step-formula">4 &times; 22 kr = 88 kr</span></div><div class="math-step"><span class="math-step-desc">2. Trekk prisen fra seddelen du betaler med:</span><span class="math-step-formula">100 kr - 88 kr = 12 kr</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "sorting",
+            question: "Sorter brøkene under i rekkefølge fra minst verdi (til venstre) til størst verdi (til høyre):",
+            options: ["1/10", "1/2", "1/5", "1/100"],
+            correct: ["1/100", "1/10", "1/5", "1/2"],
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Gjør om alle brøkene til desimaltall:</span><span class="math-step-formula">1/100=0,01, 1/10=0,1, 1/5=0,2, 1/2=0,5</span></div><div class="math-step"><span class="math-step-desc">2. Sammenlign desimaltallene:</span><span class="math-step-formula">0,01 &lt; 0,1 &lt; 0,2 &lt; 0,5</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "matrix",
+            question: "Vurder påstandene om deling og rest under:",
+            matrixRows: [
+                { text: "Hvis du deler 17 på 5, blir resten 2.", correct: "Riktig" },
+                { text: "Hvis du deler 24 på 6, blir resten 1.", correct: "Galt" },
+                { text: "Alle partall kan deles på 2 uten rest.", correct: "Riktig" }
+            ],
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">17 delt på 5:</span><span class="math-step-formula">17 = 3 &times; 5 + 2 (Resten er 2)</span></div><div class="math-step"><span class="math-step-desc">24 delt på 6:</span><span class="math-step-formula">24 = 4 &times; 6 + 0 (Resten er 0)</span></div><div class="math-step"><span class="math-step-desc">Partalls-definisjonen:</span><span class="math-step-formula">Kan deles på 2 uten rest</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "En løpebane er 400 meter lang. Hvor mange runder må du løpe for å tilbakelegge 2 kilometer? Skriv kun tallet.",
+            correct: "5",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Gjør om 2 kilometer til meter:</span><span class="math-step-formula">2 km = 2000 meter</span></div><div class="math-step"><span class="math-step-desc">2. Del totaldistansen på lengden av én runde:</span><span class="math-step-formula">2000 m : 400 m = 5</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            question: "Hvis du har 3 bukser og 4 skjorter, hvor mange unike kombinasjoner av ett par bukser og én skjorte kan du sette sammen?",
+            options: ["7", "12", "16", "24"],
+            correct: "12",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Bruk multiplikasjonsprinsippet for valg:</span><span class="math-step-formula">Bukser &times; Skjorter</span></div><div class="math-step"><span class="math-step-desc">2. Regn ut kombinasjonene:</span><span class="math-step-formula">3 &times; 4 = 12</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "input",
+            question: "Regn ut: 12 + 8 : 4 - 3. Husk regnerekkefølge! Skriv kun tallet.",
+            correct: "11",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Utfør divisjonen først (8 : 4):</span><span class="math-step-formula">2</span></div><div class="math-step"><span class="math-step-desc">2. Utfør addisjonen (12 + 2):</span><span class="math-step-formula">14</span></div><div class="math-step"><span class="math-step-desc">3. Utfør subtraksjonen (14 - 3):</span><span class="math-step-formula">11</span></div></div>'
+        },
+        {
+            level: 1,
+            type: "dropdown",
+            question: "Tallet 487 har ___ enere.",
+            options: ["4", "8", "7", "87"],
+            correct: "7",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">Plassverdiene til 487 er:</span><span class="math-step-formula">4 hundrere, 8 tiere, 7 enere</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            question: "Hvilket av disse koordinatpunktene ligger direkte på y-aksen?",
+            options: ["(3, 2)", "(0, 4)", "(4, 0)", "(1, 1)"],
+            correct: "(0, 4)",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">For at et punkt skal ligge på y-aksen, må:</span><span class="math-step-formula">x-koordinaten være 0</span></div><div class="math-step"><span class="math-step-desc">Sjekk punktene:</span><span class="math-step-formula">(0, 4) har x = 0 (Riktig)</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "En bil kjører med en jevn fart på 80 km/t. Hvor mange kilometer kjører den på 3 timer? Skriv kun tallet.",
+            correct: "240",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Multipliser farten (per time) med antall timer:</span><span class="math-step-formula">80 km/t &times; 3 t</span></div><div class="math-step"><span class="math-step-desc">2. Regn ut svaret:</span><span class="math-step-formula">240 km</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "matching",
+            question: "Koble regneordet til venstre med dets korrekte matematiske symbol til høyre:",
+            leftItems: ["Differanse", "Sum", "Produkt", "Kvotient"],
+            rightItems: ["Minus (-)", "Pluss (+)", "Gange (x)", "Dele (:)"],
+            correct: {
+                "Differanse": "Minus (-)",
+                "Sum": "Pluss (+)",
+                "Produkt": "Gange (x)",
+                "Kvotient": "Dele (:)"
+            },
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">Differanse (svaret på):</span><span class="math-step-formula">Minus (-)</span></div><div class="math-step"><span class="math-step-desc">Sum (svaret på):</span><span class="math-step-formula">Pluss (+)</span></div><div class="math-step"><span class="math-step-desc">Produkt (svaret på):</span><span class="math-step-formula">Gange (x)</span></div><div class="math-step"><span class="math-step-desc">Kvotient (svaret på):</span><span class="math-step-formula">Dele (:)</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "Hva er medianen til disse tallene: 3, 5, 8, 9, 12? (Tallene er allerede i rekkefølge). Skriv kun tallet.",
+            correct: "8",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Medianen er verdien som står nøyaktig i midten av en sortert rekke:</span><span class="math-step-formula">3, 5, [8], 9, 12</span></div><div class="math-step"><span class="math-step-desc">2. Svaret er:</span><span class="math-step-formula">8</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            question: "Hvor mange hjørner har en trekantet pyramide (tetraeder)?",
+            options: ["3", "4", "5", "6"],
+            correct: "4",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Tell hjørnene i den trekantede bunnflaten:</span><span class="math-step-formula">3 hjørner</span></div><div class="math-step"><span class="math-step-desc">2. Legg til topphjørnet:</span><span class="math-step-formula">1 hjørne</span></div><div class="math-step"><span class="math-step-desc">3. Totalt antall hjørner:</span><span class="math-step-formula">3 + 1 = 4 hjørner</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "input",
+            question: "En eske inneholder 250 gram jordbær. Hvor mange slike esker må du kjøpe for å få nøyaktig 1 kilo jordbær? Skriv kun tallet.",
+            correct: "4",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Gjør om 1 kilo til gram:</span><span class="math-step-formula">1 kg = 1000 gram</span></div><div class="math-step"><span class="math-step-desc">2. Del totalvekten på vekten per eske:</span><span class="math-step-formula">1000 g : 250 g = 4</span></div></div>'
+        },
+        {
+            level: 1,
+            type: "dropdown",
+            question: "Dersom du kaster en mynt, er sannsynligheten for å få kron ___.",
+            options: ["1/2", "1/3", "1/4", "0"],
+            correct: "1/2",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Det er to sider på mynten (mulige utfall):</span><span class="math-step-formula">Kron eller mynt (2)</span></div><div class="math-step"><span class="math-step-desc">2. Det er én side som er kron (gunstig utfall):</span><span class="math-step-formula">1</span></div><div class="math-step"><span class="math-step-desc">3. Sannsynligheten:</span><span class="math-step-formula">1/2</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            question: "Hvor mye er 3/5 av en mengde på 25 epler?",
+            options: ["5", "10", "15", "20"],
+            correct: "15",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Finn først 1/5 ved å dele på 5:</span><span class="math-step-formula">25 : 5 = 5 epler</span></div><div class="math-step"><span class="math-step-desc">2. Multipliser dette med 3 for å finne 3/5:</span><span class="math-step-formula">5 &times; 3 = 15 epler</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "input",
+            question: "En pappeske er 5 cm lang, 4 cm bred og 3 cm høy. Hva er volumet av esken i kubikkcentimeter? Skriv kun tallet.",
+            correct: "60",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Volum av et rett prisme = lengde &times; bredde &times; høyde:</span><span class="math-step-formula">5 &times; 4 &times; 3</span></div><div class="math-step"><span class="math-step-desc">2. Regn ut volumet:</span><span class="math-step-formula">60 cm³</span></div></div>'
+        },
+        {
+            level: 2,
+            type: "sorting",
+            question: "Sorter desimaltallene under i rekkefølge fra minst verdi (til venstre) til størst verdi (til høyre):",
+            options: ["0,05", "0,5", "0,15", "0,005"],
+            correct: ["0,005", "0,05", "0,15", "0,5"],
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Sammenlign tallene ved å se på plassverdiene etter komma:</span><span class="math-step-formula">0,005 (5 tusendeler) &lt; 0,05 (5 hundredeler)</span></div><div class="math-step"><span class="math-step-desc">2. Sorter de gjenværende tallene:</span><span class="math-step-formula">0,05 &lt; 0,15 &lt; 0,5</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "matrix",
+            question: "Vurder påstandene om negative tall under:",
+            matrixRows: [
+                { text: "Tallet -8 er større enn -5.", correct: "Galt" },
+                { text: "Tallet -3 er mindre enn 0.", correct: "Riktig" },
+                { text: "Differansen mellom 2 og -2 er 4.", correct: "Riktig" }
+            ],
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">-8 ligger lenger til venstre enn -5 på tallinjen:</span><span class="math-step-formula">-8 er mindre enn -5 (Galt)</span></div><div class="math-step"><span class="math-step-desc">Negative tall er alltid mindre enn 0:</span><span class="math-step-formula">-3 &lt; 0 (Riktig)</span></div><div class="math-step"><span class="math-step-desc">Finn differansen (avstanden):</span><span class="math-step-formula">2 - (-2) = 2 + 2 = 4 (Riktig)</span></div></div>'
+        },
+        {
+            level: 3,
+            type: "input",
+            question: "Et rektangel har en omkrets på 20 cm. Lengden er 7 cm. Hvor mange centimeter er bredden? Skriv kun tallet.",
+            correct: "3",
+            explanation: '<div class="math-steps"><div class="math-step"><span class="math-step-desc">1. Rektangelet har to sider med lengde 7 cm:</span><span class="math-step-formula">7 + 7 = 14 cm</span></div><div class="math-step"><span class="math-step-desc">2. Finn gjenværende omkrets til de to breddene:</span><span class="math-step-formula">20 - 14 = 6 cm</span></div><div class="math-step"><span class="math-step-desc">3. Del på 2 for å finne bredden av én side:</span><span class="math-step-formula">6 : 2 = 3 cm</span></div></div>'
         }
     ],
     english: [
@@ -848,6 +1259,436 @@ window.taskDatabase = {
             options: ["En katt", "Et brunt ekorn (a brown squirrel)", "En fugl", "En ball"],
             correct: "Et brunt ekorn (a brown squirrel)",
             explanation: "Siste setning forteller: 'Max was trying to catch a brown squirrel' (Max prøvde å fange et brunt ekorn)."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            audioText: "I want to buy a new blue jacket and a pair of white shoes.",
+            question: "Hør godt på lydklippet. Hva ønsker fortelleren å kjøpe?",
+            options: ["En rød jakke og hvite sko", "En blå jakke og hvite sko", "En blå jakke og svarte sko", "En grønn jakke og brune sko"],
+            correct: "En blå jakke og hvite sko",
+            explanation: "Lydklippet sier 'a new blue jacket' (en ny blå jakke) og 'a pair of white shoes' (et par hvite sko)."
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            audioText: "My school starts at half past eight in the morning, and it finishes at two o'clock.",
+            question: "Hør godt på lydklippet. Når slutter skolen til fortelleren?",
+            options: ["Klokken halv ni", "Klokken to", "Klokken tre", "Klokken tolv"],
+            correct: "Klokken to",
+            explanation: "Lydklippet sier at skolen 'finishes at two o'clock' (slutter klokken to)."
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            audioText: "Go straight ahead, past the library, and then turn left at the supermarket.",
+            question: "Hør godt på lydklippet. Hvor skal du svinge til venstre?",
+            options: ["Ved biblioteket", "Ved supermarkedet", "Ved skolen", "Ved parken"],
+            correct: "Ved supermarkedet",
+            explanation: "Lydklippet sier 'turn left at the supermarket' (sving til venstre ved supermarkedet)."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            audioText: "There are five apples and three bananas on the kitchen table.",
+            question: "Hør godt på lydklippet. Hvor mange bananer ligger på kjøkkenbordet?",
+            options: ["Tre bananer", "Fem bananer", "Åtte bananer", "To bananer"],
+            correct: "Tre bananer",
+            explanation: "Lydklippet sier 'five apples and three bananas' (fem epler og tre bananer)."
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            audioText: "Yesterday it was sunny, but today it is cloudy. Tomorrow, the weather report says it will rain all day.",
+            question: "Hør godt på lydklippet. Hvordan er været i dag?",
+            options: ["Det er sol", "Det er overskyet", "Det regner", "Det snør"],
+            correct: "Det er overskyet",
+            explanation: "Lydklippet sier 'Today it is cloudy' (I dag er det overskyet)."
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            audioText: "I have a big brother named David who is twelve years old, and a little sister named Lily who is six.",
+            question: "Hør godt på lydklippet. Hvor gammel er lillesøsteren Lily?",
+            options: ["Seks år", "Tolv år", "Åtte år", "Ti år"],
+            correct: "Seks år",
+            explanation: "Lydklippet sier 'a little sister named Lily who is six' (en lillesøster som heter Lily og er seks år)."
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            audioText: "We went to France on vacation last summer. We stayed there for two weeks and visited many museums.",
+            question: "Hør godt på lydklippet. Hvor lenge var de i Frankrike?",
+            options: ["Én uke", "To uker", "Tre uker", "En hel måned"],
+            correct: "To uker",
+            explanation: "Lydklippet sier 'We stayed there for two weeks' (Vi ble der i to uker)."
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            audioText: "My favorite animal is the giraffe because it has a very long neck. I also like elephants.",
+            question: "Hør godt på lydklippet. Hva er fortellerens favorittdyr?",
+            options: ["Elefant", "Sjiraff", "Løve", "Ape"],
+            correct: "Sjiraff",
+            explanation: "Lydklippet sier 'My favorite animal is the giraffe' (Mitt favorittdyr er sjiraffen)."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            audioText: "I need to buy some eggs, milk, and a loaf of fresh bread from the bakery.",
+            question: "Hør godt på lydklippet. Hva skal fortelleren kjøpe på bakeriet?",
+            options: ["Egg og melk", "Et brød", "Kaker", "Frukt"],
+            correct: "Et brød",
+            explanation: "Bakeriet selger brød. Lydklippet sier 'a loaf of fresh bread from the bakery'."
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            audioText: "We are having spaghetti for dinner tonight, and my mom is making a chocolate cake for dessert.",
+            question: "Hør godt på lydklippet. Hva skal de ha til dessert?",
+            options: ["Spagetti", "Sjokoladekake", "Is", "Pannekaker"],
+            correct: "Sjokoladekake",
+            explanation: "Lydklippet sier 'chocolate cake for dessert' (sjokoladekake til dessert)."
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            audioText: "To get to the post office, you must cross the bridge and walk straight for ten minutes.",
+            question: "Hør godt på lydklippet. Hva må du gjøre for å komme til postkontoret?",
+            options: ["Gå over broen", "Svinge til høyre", "Ta bussen", "Gå gjennom parken"],
+            correct: "Gå over broen",
+            explanation: "Lydklippet sier 'cross the bridge' (gå over broen)."
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            audioText: "I usually play football on Tuesdays and swim on Fridays after school.",
+            question: "Hør godt på lydklippet. Hva gjør fortelleren på fredager etter skolen?",
+            options: ["Spiller fotball", "Svømmer", "Gjør lekser", "Ser på TV"],
+            correct: "Svømmer",
+            explanation: "Lydklippet sier 'swim on Fridays' (svømmer på fredager)."
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            audioText: "My dad bought a new car yesterday. It is silver and has five doors.",
+            question: "Hør godt på lydklippet. Hvilken farge har den nye bilen?",
+            options: ["Rød", "Blå", "Sølv", "Svart"],
+            correct: "Sølv",
+            explanation: "Lydklippet sier 'It is silver' (Den er sølvfarget)."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            audioText: "There are four white sheep and one brown cow in the field.",
+            question: "Hør godt på lydklippet. Hvor mange hvite sauer er det på jordet?",
+            options: ["Én", "Fire", "Fem", "Tre"],
+            correct: "Fire",
+            explanation: "Lydklippet sier 'four white sheep' (fire hvite sauer)."
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            audioText: "I went to bed at nine o'clock last night because I was very tired after my football match.",
+            question: "Hør godt på lydklippet. Hvorfor la fortelleren seg klokken ni?",
+            options: ["Fordi han var sliten etter fotballkampen", "Fordi han måtte tidlig opp", "Fordi det var kjedelig på TV", "Fordi han var syk"],
+            correct: "Fordi han var sliten etter fotballkampen",
+            explanation: "Lydklippet sier 'because I was very tired after my football match' (fordi jeg var veldig sliten etter fotballkampen)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Sarah is my best friend. I play with ___ every day after school.",
+            options: ["her", "him", "she", "them"],
+            correct: "her",
+            explanation: "Siden Sarah er et jentenavn (hunnkjønn), bruker vi objektformen av personlig pronomen 'her' (henne)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "The painting is hanging ___ the wall in the living room.",
+            options: ["on", "in", "under", "at"],
+            correct: "on",
+            explanation: "Når noe henger på en loddrett overflate som en vegg, bruker vi preposisjonen 'on'."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Last year, my family ___ to England for our summer holiday.",
+            options: ["go", "goes", "went", "going"],
+            correct: "went",
+            explanation: "Tidsuttrykket 'Last year' (i fjor) viser at handlingen skjedde i fortid, så vi må bruke preteritumsformen 'went'."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "I have two brushes, but my sister has three ___.",
+            options: ["brush", "brushs", "brushes", "brushies"],
+            correct: "brushes",
+            explanation: "Substantiv som slutter på sibilant (som -sh) får endelsen -es i flertall: 'brushes'."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Choose the correct question word based on the answer:<br><br>Question: '___ is the school?'<br>Answer: 'It is next to the post office.'",
+            options: ["Who", "Where", "When", "What"],
+            correct: "Where",
+            explanation: "Svaret oppgir et sted ('next to the post office'). Derfor må spørsmålet starte med spørreordet 'Where' (Hvor)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Choose the correct question word based on the answer:<br><br>Question: '___ is that boy?'<br>Answer: 'He is my new classmate, Leo.'",
+            options: ["Who", "Where", "When", "Which"],
+            correct: "Who",
+            explanation: "Svaret forteller hvem personen er ('my new classmate, Leo'). Derfor må spørsmålet starte med spørreordet 'Who' (Hvem)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Choose the correct question word based on the answer:<br><br>Question: '___ does the bus arrive?'<br>Answer: 'At five o'clock.'",
+            options: ["Who", "Where", "When", "Why"],
+            correct: "When",
+            explanation: "Svaret oppgir et tidspunkt ('At five o'clock'). Derfor må spørsmålet starte med spørreordet 'When' (Når)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "There are five ___ playing in the green park.",
+            options: ["childs", "child", "children", "childrens"],
+            correct: "children",
+            explanation: "Flertallsformen av 'child' (barn) er uregelrett og heter 'children'."
+        },
+        {
+            level: 1,
+            type: "dropdown",
+            question: "The elephant is very big, but the mouse is extremely ___.",
+            options: ["small", "tall", "heavy", "loud"],
+            correct: "small",
+            explanation: "Her søker vi motsetningen (antonymet) til 'big' (stor), som er 'small' (liten)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "He has a dog. The dog belongs to him. It is ___ dog.",
+            options: ["his", "her", "my", "their"],
+            correct: "his",
+            explanation: "Siden hunden tilhører en gutt/mann ('belongs to him'), bruker vi det possessive pronomenet 'his' (hans)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Yesterday afternoon, they ___ football in the schoolyard.",
+            options: ["play", "plays", "played", "playing"],
+            correct: "played",
+            explanation: "Vi bruker fortidsformen 'played' fordi setningen handler om noe som skjedde i går ('Yesterday afternoon')."
+        },
+        {
+            level: 3,
+            type: "dropdown",
+            question: "Choose the correct preposition:<br><br>She is very good ___ playing the piano.",
+            options: ["at", "in", "on", "with"],
+            correct: "at",
+            explanation: "Det faste uttrykket på engelsk er 'to be good at' (å være god til noe)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "We have two cats. They belong to us. They are ___ cats.",
+            options: ["our", "your", "their", "its"],
+            correct: "our",
+            explanation: "Siden kattene tilhører oss ('belong to us'), bruker vi det possessive pronomenet 'our' (våre)."
+        },
+        {
+            level: 1,
+            type: "dropdown",
+            question: "In the summer, the days are hot, but in the winter, they are ___.",
+            options: ["warm", "cold", "sunny", "bright"],
+            correct: "cold",
+            explanation: "Motsetningen til 'hot' (varm) i denne sammenhengen om vinteren er 'cold' (kald)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Yesterday, she ___ a beautiful song in the music class.",
+            options: ["sing", "sings", "sang", "singed"],
+            correct: "sang",
+            explanation: "Verbet 'to sing' er uregelrett og har fortidsformen 'sang'."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "Look at the sky! There are three ___ flying south.",
+            options: ["gooses", "goose", "geese", "geeses"],
+            correct: "geese",
+            explanation: "Flertallsformen av 'goose' (gås) er uregelrett og heter 'geese'."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "My mother is a teacher. She works in ___ school down the road.",
+            options: ["a", "an", "the", "some"],
+            correct: "a",
+            explanation: "Vi bruker den ubestemte artikkelen 'a' foran ord som begynner med en konsonantlyd ('school')."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "I have an apple. The apple is for ___ because I am hungry.",
+            options: ["me", "I", "my", "myself"],
+            correct: "me",
+            explanation: "Her trenger vi objektformen av det personlige pronomenet, som er 'me' (meg)."
+        },
+        {
+            level: 2,
+            type: "dropdown",
+            question: "There are ten ___ swimming in the deep lake.",
+            options: ["fishs", "fish", "fishes", "fishies"],
+            correct: "fish",
+            explanation: "Flertallsformen av substantiv 'fish' er vanligvis den samme i entall og flertall: 'fish'."
+        },
+        {
+            level: 3,
+            type: "dropdown",
+            question: "Choose the correct preposition:<br><br>We are interested ___ learning more about space and planets.",
+            options: ["in", "on", "at", "about"],
+            correct: "in",
+            explanation: "Det faste uttrykket på engelsk er 'to be interested in' (å være interessert i)."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>A Trip to the Zoo</h3><p>Last Tuesday, Class 5B went on a school trip to the city zoo. They traveled by bus and arrived at ten o'clock. The weather was warm and sunny. First, their teacher, Mrs. Green, took them to see the monkeys. The monkeys were climbing trees and eating yellow bananas. Next, the class saw the tall giraffes. Liam liked the giraffes best because of their long necks. At noon, the students sat down near the penguin pool to eat their lunch. Liam had a cheese sandwich and an apple. After lunch, they watched the zookeeper feed the hungry seals with fresh fish. Finally, they bought some souvenirs at the gift shop before taking the bus back to school at three o'clock.</p>",
+            question: "Which day did Class 5B go to the zoo?",
+            options: ["Monday", "Tuesday", "Wednesday", "Friday"],
+            correct: "Tuesday",
+            explanation: "Det står i starten av teksten: 'Last Tuesday, Class 5B went on a school trip...'"
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>A Trip to the Zoo</h3><p>Last Tuesday, Class 5B went on a school trip to the city zoo. They traveled by bus and arrived at ten o'clock. The weather was warm and sunny. First, their teacher, Mrs. Green, took them to see the monkeys. The monkeys were climbing trees and eating yellow bananas. Next, the class saw the tall giraffes. Liam liked the giraffes best because of their long necks. At noon, the students sat down near the penguin pool to eat their lunch. Liam had a cheese sandwich and an apple. After lunch, they watched the zookeeper feed the hungry seals with fresh fish. Finally, they bought some souvenirs at the gift shop before taking the bus back to school at three o'clock.</p>",
+            question: "How did the students travel to the zoo?",
+            options: ["By train", "By car", "By bus", "On foot"],
+            correct: "By bus",
+            explanation: "Det står i teksten: 'They traveled by bus and arrived at ten o'clock.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>A Trip to the Zoo</h3><p>Last Tuesday, Class 5B went on a school trip to the city zoo. They traveled by bus and arrived at ten o'clock. The weather was warm and sunny. First, their teacher, Mrs. Green, took them to see the monkeys. The monkeys were climbing trees and eating yellow bananas. Next, the class saw the tall giraffes. Liam liked the giraffes best because of their long necks. At noon, the students sat down near the penguin pool to eat their lunch. Liam had a cheese sandwich and an apple. After lunch, they watched the zookeeper feed the hungry seals with fresh fish. Finally, they bought some souvenirs at the gift shop before taking the bus back to school at three o'clock.</p>",
+            question: "What was the weather like during the trip?",
+            options: ["Cold and rainy", "Warm and sunny", "Windy and cloudy", "Snowy and cold"],
+            correct: "Warm and sunny",
+            explanation: "Teksten sier: 'The weather was warm and sunny.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>A Trip to the Zoo</h3><p>Last Tuesday, Class 5B went on a school trip to the city zoo. They traveled by bus and arrived at ten o'clock. The weather was warm and sunny. First, their teacher, Mrs. Green, took them to see the monkeys. The monkeys were climbing trees and eating yellow bananas. Next, the class saw the tall giraffes. Liam liked the giraffes best because of their long necks. At noon, the students sat down near the penguin pool to eat their lunch. Liam had a cheese sandwich and an apple. After lunch, they watched the zookeeper feed the hungry seals with fresh fish. Finally, they bought some souvenirs at the gift shop before taking the bus back to school at three o'clock.</p>",
+            question: "Which animals did the class see first?",
+            options: ["The giraffes", "The monkeys", "The penguins", "The seals"],
+            correct: "The monkeys",
+            explanation: "Ifølge teksten: 'First, their teacher, Mrs. Green, took them to see the monkeys.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>A Trip to the Zoo</h3><p>Last Tuesday, Class 5B went on a school trip to the city zoo. They traveled by bus and arrived at ten o'clock. The weather was warm and sunny. First, their teacher, Mrs. Green, took them to see the monkeys. The monkeys were climbing trees and eating yellow bananas. Next, the class saw the tall giraffes. Liam liked the giraffes best because of their long necks. At noon, the students sat down near the penguin pool to eat their lunch. Liam had a cheese sandwich and an apple. After lunch, they watched the zookeeper feed the hungry seals with fresh fish. Finally, they bought some souvenirs at the gift shop before taking the bus back to school at three o'clock.</p>",
+            question: "Why did Liam like the giraffes best?",
+            options: ["Because they were friendly", "Because of their long necks", "Because they ate yellow bananas", "Because they could swim fast"],
+            correct: "Because of their long necks",
+            explanation: "Teksten forteller: 'Liam liked the giraffes best because of their long necks.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>A Trip to the Zoo</h3><p>Last Tuesday, Class 5B went on a school trip to the city zoo. They traveled by bus and arrived at ten o'clock. The weather was warm and sunny. First, their teacher, Mrs. Green, took them to see the monkeys. The monkeys were climbing trees and eating yellow bananas. Next, the class saw the tall giraffes. Liam liked the giraffes best because of their long necks. At noon, the students sat down near the penguin pool to eat their lunch. Liam had a cheese sandwich and an apple. After lunch, they watched the zookeeper feed the hungry seals with fresh fish. Finally, they bought some souvenirs at the gift shop before taking the bus back to school at three o'clock.</p>",
+            question: "Where did the students sit to eat their lunch?",
+            options: ["Near the monkey cage", "Near the penguin pool", "Inside the zoo cafe", "On the school bus"],
+            correct: "Near the penguin pool",
+            explanation: "Teksten sier: 'At noon, the students sat down near the penguin pool to eat their lunch.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>A Trip to the Zoo</h3><p>Last Tuesday, Class 5B went on a school trip to the city zoo. They traveled by bus and arrived at ten o'clock. The weather was warm and sunny. First, their teacher, Mrs. Green, took them to see the monkeys. The monkeys were climbing trees and eating yellow bananas. Next, the class saw the tall giraffes. Liam liked the giraffes best because of their long necks. At noon, the students sat down near the penguin pool to eat their lunch. Liam had a cheese sandwich and an apple. After lunch, they watched the zookeeper feed the hungry seals with fresh fish. Finally, they bought some souvenirs at the gift shop before taking the bus back to school at three o'clock.</p>",
+            question: "What did Liam eat for lunch?",
+            options: ["A ham sandwich and a banana", "A cheese sandwich and an apple", "Spaghetti and chocolate cake", "A hot dog and an orange"],
+            correct: "A cheese sandwich and an apple",
+            explanation: "Teksten opplyser: 'Liam had a cheese sandwich and an apple.'"
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            passage: "<h3>A Trip to the Zoo</h3><p>Last Tuesday, Class 5B went on a school trip to the city zoo. They traveled by bus and arrived at ten o'clock. The weather was warm and sunny. First, their teacher, Mrs. Green, took them to see the monkeys. The monkeys were climbing trees and eating yellow bananas. Next, the class saw the tall giraffes. Liam liked the giraffes best because of their long necks. At noon, the students sat down near the penguin pool to eat their lunch. Liam had a cheese sandwich and an apple. After lunch, they watched the zookeeper feed the hungry seals with fresh fish. Finally, they bought some souvenirs at the gift shop before taking the bus back to school at three o'clock.</p>",
+            question: "At what time did the class take the bus back to school?",
+            options: ["At ten o'clock", "At noon", "At three o'clock", "At five o'clock"],
+            correct: "At three o'clock",
+            explanation: "Teksten sier: '...before taking the bus back to school at three o'clock.'"
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>My Hobby: Gardening</h3><p>Tom is eleven years old, and his favorite hobby is gardening. Every Saturday morning, he helps his grandfather in their backyard garden. They grow many kinds of vegetables, like red tomatoes, green peas, and carrots. First, Tom pulls out the weeds around the small plants. Then, he uses a blue watering can to water them. Tom has to be careful not to water them too much. His favorite part of gardening is harvesting. Last week, they picked a large basket of sweet strawberries and made a delicious strawberry pie. Tom feels proud when he eats vegetables that he grew himself.</p>",
+            question: "How old is Tom?",
+            options: ["Nine years old", "Ten years old", "Eleven years old", "Twelve years old"],
+            correct: "Eleven years old",
+            explanation: "Det står i starten av teksten: 'Tom is eleven years old...'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>My Hobby: Gardening</h3><p>Tom is eleven years old, and his favorite hobby is gardening. Every Saturday morning, he helps his grandfather in their backyard garden. They grow many kinds of vegetables, like red tomatoes, green peas, and carrots. First, Tom pulls out the weeds around the small plants. Then, he uses a blue watering can to water them. Tom has to be careful not to water them too much. His favorite part of gardening is harvesting. Last week, they picked a large basket of sweet strawberries and made a delicious strawberry pie. Tom feels proud when he eats vegetables that he grew himself.</p>",
+            question: "Who does Tom help in the garden?",
+            options: ["His father", "His grandfather", "His mother", "His classmate"],
+            correct: "His grandfather",
+            explanation: "Teksten sier: '...he helps his grandfather in their backyard garden.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>My Hobby: Gardening</h3><p>Tom is eleven years old, and his favorite hobby is gardening. Every Saturday morning, he helps his grandfather in their backyard garden. They grow many kinds of vegetables, like red tomatoes, green peas, and carrots. First, Tom pulls out the weeds around the small plants. Then, he uses a blue watering can to water them. Tom has to be careful not to water them too much. His favorite part of gardening is harvesting. Last week, they picked a large basket of sweet strawberries and made a delicious strawberry pie. Tom feels proud when he eats vegetables that he grew himself.</p>",
+            question: "Which vegetables do Tom and his grandfather grow?",
+            options: ["Potatoes, onions, and garlic", "Tomatoes, peas, and carrots", "Lettuce and cucumbers", "Pumpkins and beans"],
+            correct: "Tomatoes, peas, and carrots",
+            explanation: "Teksten lister opp: '...vegetables, like red tomatoes, green peas, and carrots.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>My Hobby: Gardening</h3><p>Tom is eleven years old, and his favorite hobby is gardening. Every Saturday morning, he helps his grandfather in their backyard garden. They grow many kinds of vegetables, like red tomatoes, green peas, and carrots. First, Tom pulls out the weeds around the small plants. Then, he uses a blue watering can to water them. Tom has to be careful not to water them too much. His favorite part of gardening is harvesting. Last week, they picked a large basket of sweet strawberries and made a delicious strawberry pie. Tom feels proud when he eats vegetables that he grew himself.</p>",
+            question: "What does Tom do before watering the plants?",
+            options: ["He picks strawberries", "He pulls out the weeds", "He bakes a strawberry pie", "He goes to school"],
+            correct: "He pulls out the weeds",
+            explanation: "Teksten sier: 'First, Tom pulls out the weeds around the small plants. Then, he uses a blue watering can...'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>My Hobby: Gardening</h3><p>Tom is eleven years old, and his favorite hobby is gardening. Every Saturday morning, he helps his grandfather in their backyard garden. They grow many kinds of vegetables, like red tomatoes, green peas, and carrots. First, Tom pulls out the weeds around the small plants. Then, he uses a blue watering can to water them. Tom has to be careful not to water them too much. His favorite part of gardening is harvesting. Last week, they picked a large basket of sweet strawberries and made a delicious strawberry pie. Tom feels proud when he eats vegetables that he grew himself.</p>",
+            question: "What color is Tom's watering can?",
+            options: ["Red", "Green", "Blue", "Yellow"],
+            correct: "Blue",
+            explanation: "Ifølge teksten: '...he uses a blue watering can to water them.'"
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            passage: "<h3>My Hobby: Gardening</h3><p>Tom is eleven years old, and his favorite hobby is gardening. Every Saturday morning, he helps his grandfather in their backyard garden. They grow many kinds of vegetables, like red tomatoes, green peas, and carrots. First, Tom pulls out the weeds around the small plants. Then, he uses a blue watering can to water them. Tom has to be careful not to water them too much. His favorite part of gardening is harvesting. Last week, they picked a large basket of sweet strawberries and made a delicious strawberry pie. Tom feels proud when he eats vegetables that he grew himself.</p>",
+            question: "What is Tom's favorite part of gardening?",
+            options: ["Pulling out weeds", "Watering the plants", "Harvesting", "Baking pie"],
+            correct: "Harvesting",
+            explanation: "I teksten står det: 'His favorite part of gardening is harvesting.'"
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            passage: "<h3>My Hobby: Gardening</h3><p>Tom is eleven years old, and his favorite hobby is gardening. Every Saturday morning, he helps his grandfather in their backyard garden. They grow many kinds of vegetables, like red tomatoes, green peas, and carrots. First, Tom pulls out the weeds around the small plants. Then, he uses a blue watering can to water them. Tom has to be careful not to water them too much. His favorite part of gardening is harvesting. Last week, they picked a large basket of sweet strawberries and made a delicious strawberry pie. Tom feels proud when he eats vegetables that he grew himself.</p>",
+            question: "What did Tom and his grandfather make with the strawberries?",
+            options: ["Strawberry jam", "A strawberry pie", "Strawberry ice cream", "A fruit salad"],
+            correct: "A strawberry pie",
+            explanation: "Teksten forteller at de: 'made a delicious strawberry pie'."
         }
     ],
     reading: [
@@ -1318,6 +2159,459 @@ window.taskDatabase = {
             options: ["Hele døgnet", "Kun om vinteren", "Hvis du sykler i mørket", "Bare på bilveier"],
             correct: "Hvis du sykler i mørket",
             explanation: "Teksten opplyser: 'Det er også påbudt med lys på sykkelen hvis du sykler i mørket'."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            question: "Hvilket kallenavn har planeten Mars?",
+            options: ["Den blå planeten", "Den røde planeten", "Gasskjempen", "Isplaneten"],
+            correct: "Den røde planeten",
+            explanation: "Teksten starter med å si: 'Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten»'."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            question: "Hvorfor har Mars en rødlig farge?",
+            options: ["Fordi det er fylt med rød lava", "På grunn av jernoksid (rust) i bakken og støvet", "Fordi atmosfæren reflekterer rødt sollys", "På grunn av røde planter og trær"],
+            correct: "På grunn av jernoksid (rust) i bakken og støvet",
+            explanation: "Teksten forklarer: 'Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            question: "Hva består atmosfæren på Mars hovedsakelig av?",
+            options: ["Oksygen", "Karbondioksid", "Nitrogen", "Helium"],
+            correct: "Karbondioksid",
+            explanation: "I teksten står det: '...en veldig tynn atmosfære som består av mest karbondioksid.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            question: "Hva er gjennomsnittstemperaturen på Mars?",
+            options: ["Pluss 20 varmegrader", "Minus 10 kuldegrader", "Minus 60 kuldegrader", "Minus 120 kuldegrader"],
+            correct: "Minus 60 kuldegrader",
+            explanation: "Teksten opplyser: '...gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en very tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            question: "Har det vært mennesker på Mars?",
+            options: ["Ja, flere astronauter har landet der", "Nei, mennesker har ennå ikke reist til Mars", "Ja, men bare i korte perioder på noen timer", "Ja, på 1960-tallet"],
+            correct: "Nei, mennesker har ennå ikke reist til Mars",
+            explanation: "Teksten slår fast: 'Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit.'"
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            question: "Hva heter to av de nyeste og mest kjente robotene på Mars?",
+            options: ["Voyager og Apollo", "Curiosity og Perseverance", "Sputnik og Hubble", "Mars 1 og Mars 2"],
+            correct: "Curiosity og Perseverance",
+            explanation: "Teksten oppgir navnet på robotene: 'Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten...'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            question: "Hvorfor undersøker robotene overflaten på Mars?",
+            options: ["For å bygge hus til mennesker", "For å ta bilder, gjøre målinger og lete etter tegn på vann og liv", "For å hente gull og sølv", "For å starte en romstasjon"],
+            correct: "For å ta bilder, gjøre målinger og lete etter tegn på vann og liv",
+            explanation: "Ifølge teksten kjører de rundt 'for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der'."
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            question: "Hvor lang tid tar en reise til Mars hver vei med dagens teknologi?",
+            options: ["Sju til ni dager", "Sju til ni uker", "Sju til ni måneder", "Sju til ni år"],
+            correct: "Sju til ni måneder",
+            explanation: "Teksten opplyser: 'Med dagens raketter tar reisen omtrent sju til ni måneder hver vei...'"
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            question: "Hva er en av de største utfordringene for en fremtidig bemannet reise til Mars?",
+            options: ["At veien er vanskelig å finne", "Å beskytte astronautene mot farlig stråling og sørge for nok mat, vann og oksygen", "At motoren må slås av i verdensrommet", "Å styre raketten forbi månen"],
+            correct: "Å beskytte astronautene mot farlig stråling og sørge for nok mat, vann og oksygen",
+            explanation: "Dette står i siste setning: 'En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling... og å sørge for nok mat, vann og oksygen'."
+        },
+        {
+            level: 3,
+            type: "word_clicker",
+            passage: "<h3>Reise til Mars</h3><p>Mars er den fjerde planeten fra sola og kalles ofte «den røde planeten». Den røde fargen skyldes jernoksid, som egentlig er vanlig rust, i bakken og støvet. Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid. Fordi atmosfæren er så tynn, kan den ikke holde på varmen fra sola, og gjennomsnittstemperaturen på Mars er rundt minus 60 kuldegrader.</p><p>Mennesker har ennå ikke reist til Mars, men vi har sendt mange roboter dit. De nyeste og mest avanserte robotene kalles rovere. Roverne Curiosity og Perseverance har hjul og kjører rundt på overflaten for å ta bilder, gjøre målinger og lete etter tegn på at det har vært vann og kanskje mikroskopisk liv der for milliarder av år siden. De sender bildene og dataene tilbake til jorda via satellitter.</p><p>Å reise til Mars tar veldig lang tid. Med dagens raketter tar reisen omtrent sju til ni måneder hver vei, avhengig av hvor planetene befinner seg i banene sine. En av de største utfordringene for en fremtidig bemannet reise er å beskytte astronautene mot farlig stråling i verdensrommet, og å sørge for nok mat, vann og oksygen under den lange turen.</p>",
+            passageText: "Mars er en kald og tørr ørkenverden med en veldig tynn atmosfære som består av mest karbondioksid.",
+            question: "Klikk på ordet i setningen over som betyr 'gasslaget som omgir en planet':",
+            correct: "atmosfære",
+            explanation: "Atmosfære er gasslaget som ligger rundt en planet."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            question: "Hvilken funksjon hadde en middelalderborg?",
+            options: ["De var kun for lagring av korn", "De fungerte som trygge hjem og sterke forsvarsverk", "De var skoler for barn", "De ble brukt som markedsplasser"],
+            correct: "De fungerte som trygge hjem og sterke forsvarsverk",
+            explanation: "Teksten sier: 'Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender.'"
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            question: "Hva slags byggemateriale ble hovedsakelig brukt til borgene?",
+            options: ["Tre og halm", "Stein", "Jern og glass", "Betong"],
+            correct: "Stein",
+            explanation: "I starten står det: 'I middelalderen bygde konger og adelsmenn store borger av stein.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            question: "Hvorfor bygde man ofte borgen på en høyde eller en klippe?",
+            options: ["Fordi jorda var bedre der", "For at det skulle være lett å se fiender som nærmet seg", "Fordi det regnet mindre der", "For å være nærmere skyene"],
+            correct: "For at det skulle være lett å se fiender som nærmet seg",
+            explanation: "Teksten forklarer: '...gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            question: "Hva var det første arbeiderne gjorde på byggeplassen?",
+            options: ["Mure opp ringmuren", "Grave en dyp vollgrav", "Bygge borgtårnet", "Lage en trebro"],
+            correct: "Grave en dyp vollgrav",
+            explanation: "I andre avsnitt står det: 'Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            question: "Hva gjorde de med vollgraven etter at den var gravd?",
+            options: ["Fylte den med vann (hvis mulig)", "La tak over den", "Planted trær i den", "Fylte den med spisse steiner"],
+            correct: "Fylte den med vann (hvis mulig)",
+            explanation: "Teksten opplyser: 'Deretter fylte de vollgraven med vann hvis det var mulig.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            question: "Hva var plassert rett innenfor vollgraven?",
+            options: ["Det store borgtårnet", "En høy, tykk ringmur", "Kongens stall", "En grønnsakshage"],
+            correct: "En høy, tykk ringmur",
+            explanation: "Ifølge teksten: 'Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            question: "Hva ble bygget helt til slutt i prosessen?",
+            options: ["Vollgraven", "Borgtårnet (donjonen)", "Ringmuren", "Portrommet"],
+            correct: "Borgtårnet (donjonen)",
+            explanation: "I tredje avsnitt står det: 'Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen».'"
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            question: "Hvorfor lå inngangen til borgtårnet ofte i andre etasje?",
+            options: ["For å få bedre utsikt", "For at røyken fra kjøkkenet skulle slippe ut", "Fordi stigen kunne trekkes opp for å hindre fiender", "Fordi første etasje ble fylt med vann"],
+            correct: "Fordi stigen kunne trekkes opp for å hindre fiender",
+            explanation: "Teksten forklarer: '...inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.'"
+        },
+        {
+            level: 3,
+            type: "sorting",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            question: "Sorter byggetrinnene under i riktig kronologisk rekkefølge fra start (til venstre) til slutt (til høyre):",
+            options: ["Bygge ringmuren", "Finne et egnet sted", "Bygge borgtårnet (donjonen)", "Grave en dyp vollgrav"],
+            correct: ["Finne et egnet sted", "Grave en dyp vollgrav", "Bygge ringmuren", "Bygge borgtårnet (donjonen)"],
+            explanation: "Byggingen startet med å finne et sted, deretter grave vollgrav, så mure ringmuren, og helt til slutt bygge det indre borgtårnet."
+        },
+        {
+            level: 3,
+            type: "word_clicker",
+            passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
+            passageText: "Deretter fylte de vollgraven med vann hvis det var mulig.",
+            question: "Klikk på ordet i setningen over som betyr 'grøft rundt en borg':",
+            correct: "vollgraven",
+            explanation: "En vollgrav er en dyp grøft gravd rundt en borg for å beskytte mot angrep."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen to Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            question: "Hva kalles detektivklubben til Klara og Sebastian?",
+            options: ["Detektiv-klanen", "Super-snokene", "Hundesnuserne", "Tjafse-patruljen"],
+            correct: "Super-snokene",
+            explanation: "Første setning sier: 'Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene»'."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            question: "Hvor hadde detektivene kontoret sitt?",
+            options: ["I kjelleren hos Sebastian", "I trehytta i hagen til Klara", "I garasjen til fru Hansen", "På skolen"],
+            correct: "I trehytta i hagen til Klara",
+            explanation: "Teksten opplyser: 'De hadde et eget kontor i trehytta i hagen til Klara...'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            question: "Hva slags hund hadde fru Hansen mistet?",
+            options: ["En stor schæfer", "En liten, hvit puddel", "En brun dachs", "En gyllen retriever"],
+            correct: "En liten, hvit puddel",
+            explanation: "Teksten beskriver hunden: 'Hennes lille, hvite puddel Bella var borte.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            question: "Hva var det første sporet detektivene oppdaget på portstolpen?",
+            options: ["Et fotspor i gjørma", "En bit av en blå strikket ulltråd", "En mistet lue", "En tyggis"],
+            correct: "En bit av en blå strikket ulltråd",
+            explanation: "Det står i andre avsnitt: '...og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            question: "Hvem møtte detektivene utenfor matbutikken?",
+            options: ["En politimann", "Postmannen Thomas", "En klassekamerat", "Fru Hansens datter"],
+            correct: "Postmannen Thomas",
+            explanation: "Teksten sier: 'Utenfor matbutikken møtte de Postmannen Thomas...'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            question: "Hva hadde postmannen sett?",
+            options: ["En hund som løp etter en katt", "En gutt med en blå strikkelue som leide en hvit hund", "En rød sykkel i veikanten", "Ingenting spesielt"],
+            correct: "En gutt med en blå strikkelue som leide en hvit hund",
+            explanation: "Thomas fortalte 'at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken'."
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            question: "Hvor i parken fant de Bella og gutten?",
+            options: ["Bak den store lekeplassen", "Ved den store andedammen", "Under en stor eik", "Ved fotballbanen"],
+            correct: "Ved den store andedammen",
+            explanation: "Teksten forteller: 'Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella...'"
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            question: "Hvorfor hadde gutten tatt med seg Bella til parken?",
+            options: ["For å stjele henne", "For å passe på henne mens han prøvde å finne eieren", "For å lære henne triks", "For å selge henne"],
+            correct: "For å passe på henne mens han prøvde å finne eieren",
+            explanation: "Gutten forklarte 'at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren.'"
+        },
+        {
+            level: 3,
+            type: "sorting",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            question: "Sorter hendelsene under i kronologisk rekkefølge fra først (til venstre) til sist (til høyre):",
+            options: ["Finne Bella i parken", "Finne en blå ulltråd på porten", "Fru Hansen forteller om hunden", "Snakke med Postmannen Thomas"],
+            correct: ["Fru Hansen forteller om hunden", "Finne en blå ulltråd på porten", "Snakke med Postmannen Thomas", "Finne Bella i parken"],
+            explanation: "Først kom fru Hansen for å si ifra, så undersøkte de porten (ulltråden), deretter snakket de med postmannen, og til slutt fant de Bella i parken."
+        },
+        {
+            level: 3,
+            type: "word_clicker",
+            passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
+            passageText: "Detektivene startet etterforskningen umiddelbart.",
+            question: "Klikk på ordet i setningen over som betyr 'med en gang' eller 'uten opphold':",
+            correct: "umiddelbart",
+            explanation: "Umiddelbart betyr med en gang, direkte eller uten forsinkelse."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            question: "Hva må du gjøre aller først, før du blander ingrediensene?",
+            options: ["Piske egget stivt", "Forvarme stekeovnen til 180 grader", "Hakke kokesjokoladen", "Sette deigen på stekeplaten"],
+            correct: "Forvarme stekeovnen til 180 grader",
+            explanation: "Teksten sier: 'Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            question: "Hvorfor må du forvarme ovnen?",
+            options: ["For at deigen ikke skal smelte på benken", "Slik at kjeksene steker jevnt med en gang de settes inn", "For å spare strøm", "For at kjeksene skal bli helt svarte"],
+            correct: "Slik at kjeksene steker jevnt med en gang de settes inn",
+            explanation: "Teksten forklarer: 'Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            question: "Hvor mye smør trenger du til denne oppskriften?",
+            options: ["50 gram", "100 gram", "150 gram", "200 gram"],
+            correct: "100 gram",
+            explanation: "Under ingredienser står det: '100 gram romtemperert smør'."
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            question: "Hvilken ingrediens skal piskes sammen med smøret først?",
+            options: ["Hvetemel", "Bakepulver", "Sukker", "Kokesjokolade"],
+            correct: "Sukker",
+            explanation: "Instruksjonen lyder: 'Først pisker du smør og sukker sammen til en luftig blanding.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            question: "Når skal kokesjokoladen tilsettes i deigen?",
+            options: ["Aller først sammen med smøret", "Helt til slutt, etter at melet er rørt inn", "Samtidig med egget", "Etter at kjeksene er stekt"],
+            correct: "Helt til slutt, etter at melet er rørt inn",
+            explanation: "Det står i teksten: 'Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.'"
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            question: "Hva bør du dekke stekeplaten med før du legger på deigen?",
+            options: ["Aluminiumsfolie", "Bakepapir", "Ingenting", "Smør og sukker"],
+            correct: "Bakepapir",
+            explanation: "Teksten spesifiserer: '...sett deigen i små klatter på en stekeplate dekket med bakepapir.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            question: "Hvorfor må du ha avstand mellom deigklattene på stekeplaten?",
+            options: ["For at de ikke skal brenne seg", "Fordi kjeksene flyter utover under stekingen", "For at det skal se ryddigere ut", "Slik at de steker saktere"],
+            correct: "Fordi kjeksene flyter utover under stekingen",
+            explanation: "Teksten opplyser: 'Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            question: "Hvor lenge skal kjeksene steke i ovnen?",
+            options: ["5 til 8 minutter", "10 til 12 minutter", "15 til 20 minutter", "En halvtime"],
+            correct: "10 til 12 minutter",
+            explanation: "Det står i teksten: 'Stek kjeksene midt i ovnen i 10 til 12 minutter...'"
+        },
+        {
+            level: 3,
+            type: "multiple_choice",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            question: "Hvorfor bør kjeksene avkjøles på en rist i 5 minutter?",
+            options: ["For at de ikke skal være for varme å holde i", "For at de skal bli sprø på utsiden og myke inni", "For at sjokoladen skal stivne helt", "For at de skal krympe"],
+            correct: "For at de skal bli sprø på utsiden og myke inni",
+            explanation: "Teksten avslutter med: 'La dem avkjøles på en rist i fem minutter... da blir de deilig sprø på utsiden og myke inni.'"
+        },
+        {
+            level: 3,
+            type: "word_clicker",
+            passage: "<h3>Superenkle sjokoladekjeks</h3><p>Det er koselig å bake, og disse sjokoladekjeksene er både kjempegode og enkle å lage. Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader. Da blir ovnen varm nok til at kjeksene steker jevnt med en gang de settes inn.</p><p>Du trenger følgende ingredienser: 100 gram romtemperert smør, 1 desiliter sukker, 1 egg, 2,5 desiliter hvetemel, 1 teskje bakepulver og 100 gram hakket kokesjokolade. Først pisker du smør og sukker sammen til en luftig blanding. Deretter rører du inn egget. I en annen bolle blander du hvetemel og bakepulver, før du har dette oppi smørblandingen og rører godt. Til slutt vender du forsiktig inn den hakkede kokesjokoladen med en sleiv.</p><p>Bruk en spiseskje og sett deigen i små klatter på en stekeplate dekket med bakepapir. Pass på å ha litt avstand mellom klattene, for kjeksene vil flyte utover under stekingen. Stek kjeksene midt i ovnen i 10 til 12 minutter, til de er lysebrune i kantene. La dem avkjøles på en rist i fem minutter før du spiser dem – da blir de deilig sprø på utsiden og myke inni.</p>",
+            passageText: "Før du begynner å blande ingrediensene, må du huske å forvarme stekeovnen til 180 grader.",
+            question: "Klikk på ordet i setningen over som betyr 'varme opp ovnen på forhånd':",
+            correct: "forvarme",
+            explanation: "Å forvarme betyr å varme opp ovnen på forhånd, før maten settes inn."
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det to en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            question: "Hva betyr det å ha godt 'nettvett'?",
+            options: ["Å vite hvordan man programmerer en datamaskin", "Å beskytte seg selv og andre når man bruker internett", "Å bruke internett hele dagen uten pauser", "Å kjøpe dyre spill på nettet"],
+            correct: "Å beskytte seg selv og andre når man bruker internett",
+            explanation: "Teksten definerer: 'Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            question: "Hvilke tegn bør et sterkt passord inneholde?",
+            options: ["Bare små bokstaver", "Bare tall og navnet ditt", "Store og små bokstaver, tall og spesialtegn", "Kun spesialtegn"],
+            correct: "Store og små bokstaver, tall og spesialtegn",
+            explanation: "Teksten forklarer: 'Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn...'"
+        },
+        {
+            level: 1,
+            type: "multiple_choice",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            question: "Hvem er de eneste du kan dele passordene dine med?",
+            options: ["Bestevennene dine", "Foreldrene dine", "Læreren din", "Ingen i hele verden"],
+            correct: "Foreldrene dine",
+            explanation: "Det står i teksten: 'Du må aldri dele passordene dine med andre enn foreldrene dine...'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            question: "Hva må du alltid gjøre før du deler et bilde av en annen person på nett?",
+            options: ["Redigere bildet så det ser morsomt ut", "Spørre personen om lov først", "Sende bildet til foreldrene dine", "Legge til en lang tekst under bildet"],
+            correct: "Spørre personen om lov først",
+            explanation: "Teksten sier direkte: 'Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            question: "Hvilken informasjon bør du unngå å dele på åpne nettsider?",
+            options: ["Hva du liker å spise til middag", "Telefonnummeret eller adressen din", "Hvilke spill du liker best", "At du liker hunder"],
+            correct: "Telefonnummeret eller adressen din",
+            explanation: "Ifølge teksten: 'Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor...'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            question: "Hvorfor er det lett at meldinger i en chat kan oppfattes sårende?",
+            options: ["Fordi bokstavene er for små", "Fordi man ikke ser ansiktet eller hører stemmen til den andre", "Fordi internett er for tregt", "Fordi man skriver for fort"],
+            correct: "Fordi man ikke ser ansiktet eller hører stemmen til den andre",
+            explanation: "Teksten sier: 'Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med.'"
+        },
+        {
+            level: 2,
+            type: "multiple_choice",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du always fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            question: "Hva bør du gjøre hvis du opplever noe ubehagelig eller ser mobbing på nett?",
+            options: ["Slette chatten og late som ingenting skjedde", "Skrive noe slemt tilbake", "Alltid fortelle det til en voksen du stoler på", "Slå av PC-en og aldri bruke den igjen"],
+            correct: "Alltid fortelle det til en voksen du stoler på",
+            explanation: "Teksten råder: 'Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på...'"
+        },
+        {
+            level: 3,
+            type: "matrix",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            question: "Vurder om påstandene om deling på nett er riktige eller gale:",
+            matrixRows: [
+                { text: "Det er ulovlig å dele bilder av andre uten samtykke.", correct: "Riktig" },
+                { text: "Du kan fritt dele adressen din på alle åpne nettforum.", correct: "Galt" },
+                { text: "Et passord som '12345' regnes som et sterkt passord.", correct: "Galt" }
+            ],
+            explanation: "Bilder krever samtykke. Personlige opplysninger bør ikke deles åpent. Enkle tallsekvenser er svake passord."
+        },
+        {
+            level: 3,
+            type: "sorting",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            question: "Sorter disse passordene fra det svakeste (til venstre) til det sterkeste (til høyre) basert på nettvettreglene:",
+            options: ["Fotball123", "Fotball", "F0tb@ll!23", "123456"],
+            correct: ["123456", "Fotball", "Fotball123", "F0tb@ll!23"],
+            explanation: "Kun tall (svakest) ➔ kun bokstaver ➔ bokstaver og tall ➔ store/små bokstaver, tall og spesialtegn (sterkest)."
+        },
+        {
+            level: 3,
+            type: "word_clicker",
+            passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du always spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
+            passageText: "En annen viktig del av nettvett handler om personvern og deling av bilder.",
+            question: "Klikk på ordet i setningen over som betyr 'beskyttelse av personlige opplysninger':",
+            correct: "personvern",
+            explanation: "Personvern handler om å beskytte eget privatliv og egne opplysninger."
         }
     ]
 };
