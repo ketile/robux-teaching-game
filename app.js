@@ -161,7 +161,7 @@ const app = {
             testActions.classList.remove('hidden');
             qNavigator.classList.remove('hidden');
             
-            this.timeLeft = 900; // 15 minutter
+            this.timeLeft = (subject === 'english') ? 3600 : 5400; // 60 minutter for engelsk, 90 minutter for regning/lesing
             this.startTimer();
         } else {
             streakBox.classList.remove('hidden');
@@ -1214,7 +1214,7 @@ const app = {
             const s = this.timeLeft % 60;
             countdownEl.innerText = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
             
-            if (this.timeLeft <= 120) {
+            if (this.timeLeft <= 300) {
                 timerEl.classList.add('urgent');
             }
             if (this.timeLeft <= 0) {

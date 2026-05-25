@@ -15,7 +15,7 @@ Spillet bruker et motiverende belønningssystem der eleven tjener «Robux» til 
 
 ### 2. Spillmoduser
 *   **Øvingsmodus**: Eleven får umiddelbar tilbakemelding etter hver oppgave. Ved feil svar vises en detaljert pedagogisk forklaring.
-*   **Prøvemodus**: Simulerer en reell nasjonal prøve med en tidsbegrensning på 15 minutter. Resultater og fasit blir først synlige etter at prøven er levert.
+*   **Prøvemodus**: Simulerer en reell nasjonal prøve med offisielle tidsrammer (90 minutter for regning og lesing, 60 minutter for engelsk). Resultater og fasit blir først synlige etter at prøven er levert.
 
 ### 3. Brukervennlig og Responsivt Design
 *   Tilpasset for både iPad (liggende) og desktop, helt uten behov for vertikal rulling av selve siden.
