@@ -136,8 +136,16 @@ const app = {
             q.shuffledRight = null;
         });
         
-        // Tilfeldig stokking av spørsmål
-        this.currentQuestions = [...questions].sort(() => Math.random() - 0.5);
+        // Oppsett av spørsmål basert på modus og fag (støtter fremtidig utvidelse)
+        if (subject === 'reading') {
+            // For lesing: grupper etter tekstpassasje for å unngå at hun må hoppe mellom tekster
+            const limit = (this.gameMode === 'test') ? 4 : null;
+            this.currentQuestions = this.groupReadingQuestions(questions, limit);
+        } else {
+            // For regning og engelsk: tilfeldig rekkefølge
+            const shuffled = [...questions].sort(() => Math.random() - 0.5);
+            this.currentQuestions = (this.gameMode === 'test') ? shuffled.slice(0, 40) : shuffled;
+        }
         this.questionIndex = 0;
         
         this.userAnswers = new Array(this.currentQuestions.length).fill(null);
@@ -181,6 +189,35 @@ const app = {
         
         this.showView('game');
         this.loadQuestion();
+    },
+
+    groupReadingQuestions(questions, limitPassages) {
+        const passagesMap = new Map();
+        questions.forEach(q => {
+            const passageKey = q.passage;
+            if (!passagesMap.has(passageKey)) {
+                passagesMap.set(passageKey, []);
+            }
+            passagesMap.get(passageKey).push(q);
+        });
+        
+        // Stokk rekkefølgen på tekstene
+        let uniquePassages = Array.from(passagesMap.keys()).sort(() => Math.random() - 0.5);
+        
+        if (limitPassages) {
+            uniquePassages = uniquePassages.slice(0, limitPassages);
+        }
+        
+        // Samle alle oppgavene for de valgte tekstene, sortert i opprinnelig rekkefølge
+        let result = [];
+        uniquePassages.forEach(p => {
+            const passageQuestions = passagesMap.get(p);
+            // Sorter etter indeks i databasen for å bevare naturlig leserekkefølge
+            passageQuestions.sort((a, b) => questions.indexOf(a) - questions.indexOf(b));
+            result = result.concat(passageQuestions);
+        });
+        
+        return result;
     },
 
     loadQuestion() {
