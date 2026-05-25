@@ -21,7 +21,7 @@ window.taskDatabase = {
         {
             level: 2,
             type: "sorting",
-            question: "Sorter tallene under i rekkefølge fra minst verdi (til venstre) til størst verdi (til høyre):",
+            question: "Sorter tallene under i rekkefølge fra minst verdi (øverst) til størst verdi (nederst):",
             options: ["0,2", "1/10", "0,75", "1/2"],
             correct: ["1/10", "0,2", "1/2", "0,75"],
             explanation: "<div class=\"math-steps\"><div class=\"math-step\"><span class=\"math-step-desc\">1. Gjør om brøken 1/10 til desimaltall:</span><span class=\"math-step-formula\">1/10 = 0,1</span></div><div class=\"math-step\"><span class=\"math-step-desc\">2. Gjør om brøken 1/2 til desimaltall:</span><span class=\"math-step-formula\">1/2 = 0,5</span></div><div class=\"math-step\"><span class=\"math-step-desc\">3. Sammenlign alle desimaltallene:</span><span class=\"math-step-formula\">0,1 &lt; 0,2 &lt; 0,5 &lt; 0,75</span></div><div class=\"math-step\"><span class=\"math-step-desc\">4. Rekkefølge:</span><span class=\"math-step-formula\">1/10 ➔ 0,2 ➔ 1/2 ➔ 0,75</span></div></div>"
@@ -137,7 +137,7 @@ window.taskDatabase = {
         {
             level: 2,
             type: "sorting",
-            question: "Sorter temperaturene under fra den kaldeste (til venstre) til den varmeste (til høyre):",
+            question: "Sorter temperaturene under fra den kaldeste (øverst) til den varmeste (nederst):",
             options: ["-8 °C", "3 °C", "-2 °C", "0 °C"],
             correct: ["-8 °C", "-2 °C", "0 °C", "3 °C"],
             explanation: "<div class=\"math-steps\"><div class=\"math-step\"><span class=\"math-step-desc\">1. Finn det kaldeste tallet (mest negative):</span><span class=\"math-step-formula\">-8 °C</span></div><div class=\"math-step\"><span class=\"math-step-desc\">2. Finn det nest kaldeste tallet:</span><span class=\"math-step-formula\">-2 °C</span></div><div class=\"math-step\"><span class=\"math-step-desc\">3. Sorter positive grader og null:</span><span class=\"math-step-formula\">0 °C ➔ 3 °C</span></div></div>"
@@ -370,7 +370,7 @@ window.taskDatabase = {
         {
             level: 3,
             type: "sorting",
-            question: "Sorter brøkene under fra minst verdi (til venstre) til størst verdi (til høyre):",
+            question: "Sorter brøkene under fra minst verdi (øverst) til størst verdi (nederst):",
             options: ["1/2", "1/4", "3/4", "1/8"],
             correct: ["1/8", "1/4", "1/2", "3/4"],
             explanation: "<div class=\"math-steps\"><div class=\"math-step\"><span class=\"math-step-desc\">1. Gjør om brøkene til desimaltall:</span><span class=\"math-step-formula\">1/8=0,125, 1/4=0,25, 1/2=0,5, 3/4=0,75</span></div><div class=\"math-step\"><span class=\"math-step-desc\">2. Sammenlign verdiene:</span><span class=\"math-step-formula\">0,125 &lt; 0,25 &lt; 0,5 &lt; 0,75</span></div></div>"
@@ -483,7 +483,7 @@ window.taskDatabase = {
         {
             level: 2,
             type: "sorting",
-            question: "Sorter brøkene under i rekkefølge fra minst verdi (til venstre) til størst verdi (til høyre):",
+            question: "Sorter brøkene under i rekkefølge fra minst verdi (øverst) til størst verdi (nederst):",
             options: ["2/4", "1/4", "3/4", "4/4"],
             correct: ["1/4", "2/4", "3/4", "4/4"],
             explanation: "<div class=\"math-steps\"><div class=\"math-step\"><span class=\"math-step-desc\">1. Siden nevnerne er like (4), sammenlign tellerne:</span><span class=\"math-step-formula\">1 &lt; 2 &lt; 3 &lt; 4</span></div><div class=\"math-step\"><span class=\"math-step-desc\">2. Konklusjon:</span><span class=\"math-step-formula\">1/4 ➔ 2/4 ➔ 3/4 ➔ 4/4</span></div></div>"
@@ -585,7 +585,7 @@ window.taskDatabase = {
         {
             level: 2,
             type: "sorting",
-            question: "Sorter temperaturene under fra den kaldeste (til venstre) til den varmeste (til høyre):",
+            question: "Sorter temperaturene under fra den kaldeste (øverst) til den varmeste (nederst):",
             options: ["-15 °C", "-5 °C", "-20 °C", "5 °C"],
             correct: ["-20 °C", "-15 °C", "-5 °C", "5 °C"],
             explanation: "<div class=\"math-steps\"><div class=\"math-step\"><span class=\"math-step-desc\">1. Sammenlign de negative tallene (kaldere betyr mer negativt):</span><span class=\"math-step-formula\">-20 °C &lt; -15 °C &lt; -5 °C</span></div><div class=\"math-step\"><span class=\"math-step-desc\">2. Plasser positive grader til slutt:</span><span class=\"math-step-formula\">5 °C</span></div></div>"
@@ -717,7 +717,7 @@ window.taskDatabase = {
         {
             level: 3,
             type: "sorting",
-            question: "Sorter brøkene under i rekkefølge fra minst verdi (til venstre) til størst verdi (til høyre):",
+            question: "Sorter brøkene under i rekkefølge fra minst verdi (øverst) til størst verdi (nederst):",
             options: ["1/10", "1/2", "1/5", "1/100"],
             correct: ["1/100", "1/10", "1/5", "1/2"],
             explanation: "<div class=\"math-steps\"><div class=\"math-step\"><span class=\"math-step-desc\">1. Gjør om alle brøkene til desimaltall:</span><span class=\"math-step-formula\">1/100=0,01, 1/10=0,1, 1/5=0,2, 1/2=0,5</span></div><div class=\"math-step\"><span class=\"math-step-desc\">2. Sammenlign desimaltallene:</span><span class=\"math-step-formula\">0,01 &lt; 0,1 &lt; 0,2 &lt; 0,5</span></div></div>"
@@ -849,7 +849,7 @@ window.taskDatabase = {
         {
             level: 2,
             type: "sorting",
-            question: "Sorter desimaltallene under i rekkefølge fra minst verdi (til venstre) til størst verdi (til høyre):",
+            question: "Sorter desimaltallene under i rekkefølge fra minst verdi (øverst) til størst verdi (nederst):",
             options: ["0,05", "0,5", "0,15", "0,005"],
             correct: ["0,005", "0,05", "0,15", "0,5"],
             explanation: "<div class=\"math-steps\"><div class=\"math-step\"><span class=\"math-step-desc\">1. Sammenlign tallene ved å se på plassverdiene etter komma:</span><span class=\"math-step-formula\">0,005 (5 tusendeler) &lt; 0,05 (5 hundredeler)</span></div><div class=\"math-step\"><span class=\"math-step-desc\">2. Sorter de gjenværende tallene:</span><span class=\"math-step-formula\">0,05 &lt; 0,15 &lt; 0,5</span></div></div>"
@@ -1187,7 +1187,7 @@ window.taskDatabase = {
         {
             level: 2,
             type: "sorting",
-            question: "Sort the months in the correct calendar order (from earliest to latest):",
+            question: "Sort the months in the correct calendar order (from earliest on top to latest at the bottom):",
             options: ["April", "January", "February", "March"],
             correct: ["January", "February", "March", "April"],
             explanation: "Rekkefølgen på årets fire første måneder er: januar (January), februar (February), mars (March) og april (April)."
@@ -2278,7 +2278,7 @@ window.taskDatabase = {
         {
             level: 3,
             type: "sorting",
-            question: "Sorter hendelsene under i den rekkefølgen de skjedde i fortellingen (først til venstre):",
+            question: "Sorter hendelsene under i den rekkefølgen de skjedde i fortellingen (først øverst):",
             options: [
                 "De fant trehytta",
                 "De gikk inn i granskogen",
@@ -2347,7 +2347,7 @@ window.taskDatabase = {
         {
             level: 2,
             type: "sorting",
-            question: "Sorter trinnene for papirflybretting i riktig rekkefølge (først til venstre):",
+            question: "Sorter trinnene for papirflybretting i riktig rekkefølge (først øverst):",
             options: [
                 "Brett arket på langs og ut igjen",
                 "Brett øverste hjørner til en spiss",
@@ -2774,7 +2774,7 @@ window.taskDatabase = {
             level: 3,
             type: "sorting",
             passage: "<h3>Slik bygges en middelalderborg</h3><p>I middelalderen bygde konger og adelsmenn store borger av stein. Borgene fungerte både som trygge hjem og som sterke forsvarsverk mot fiender. Å bygge en slik borg var et enormt arbeid som tok mange år og krevde hundrevis av arbeidere, som steinbukkere, murere og tømrere.</p><p>Byggeprosessen startet alltid med å finne et egnet sted, gjerne på en høyde eller en klippe slik at det var lett å se fiender som nærmet seg. Det første arbeiderne gjorde på byggeplassen, var å grave en dyp vollgrav rundt området. Deretter fylte de vollgraven med vann hvis det var mulig. Rett innenfor vollgraven murte de opp en høy, tykk ringmur av stein. Ringmuren hadde skyteskår og tårn slik at forsvarerene kunne skyte med pil og bue i sikkerhet.</p><p>Helt til slutt bygde de det aller sikreste stedet i borgen: det store borgtårnet, også kalt «donjonen». Donjonen lage innerst og var det siste forsvarsverket hvis fienden klarte å bryte gjennom ringmuren. Borgtårnet hadde tykke steinvegger, og inngangen lå ofte i andre etasje med en stige som kunne trekkes opp, slik at det var nesten umulig for fiender å trenge inn.</p>",
-            question: "Sorter byggetrinnene under i riktig kronologisk rekkefølge fra start (til venstre) til slutt (til høyre):",
+            question: "Sorter byggetrinnene under i riktig kronologisk rekkefølge fra start (øverst) til slutt (nederst):",
             options: [
                 "Bygge ringmuren",
                 "Finne et egnet sted",
@@ -2914,7 +2914,7 @@ window.taskDatabase = {
             level: 3,
             type: "sorting",
             passage: "<h3>Detektivklubben og den forsvunne hunden</h3><p>Klara og Sebastian hadde startet sin egen detektivklubb, «Super-snokene». De hadde et eget kontor i trehytta i hagen til Klara, utstyrt med forstørrelsesglass, notatbøker og walkietalkier. En tirsdag ettermiddag kom naboen, fru Hansen, gråtende bort til gjerdet. Hennes lille, hvite puddel Bella var borte. Hun hadde sluppet henne ut i hagen en halvtime tidligere, og nå var porten åpen og Bella vekk.</p><p>Detektivene startet etterforskningen umiddelbart. Først undersøkte de porten og oppdaget en bit av en blå strikket ulltråd som hang fast i en spiker på portstolpen. Dette var det første sporet! Klara noterte det ned, mens Sebastian tok bilde med telefonen sin. Deretter gikk de nedover gaten for å se etter vitner eller flere spor. Utenfor matbutikken møtte de Postmannen Thomas, som kunne fortelle at han hadde sett en gutt med en blå strikkelue som leide en liten hvit hund i retning parken.</p><p>Detektivene løp spent bort til parken. Ved den store andedammen oppdaget de en gutt med en blå lue. Ved siden av ham satt Bella og spiste på en kjeks. Gutten ble forskrekket da detektivene konfronterte ham, men forklarte fort at han bare hadde funnet Bella gående alene langs veien. Han hadde tatt henne med til parken for å passe på henne mens han prøvde å finne eieren. Klara og Sebastian ringte fru Hansen, og noen minutter senere var Bella trygt gjenforent med sin glade eier.</p>",
-            question: "Sorter hendelsene under i kronologisk rekkefølge fra først (til venstre) til sist (til høyre):",
+            question: "Sorter hendelsene under i kronologisk rekkefølge fra først (øverst) til sist (nederst):",
             options: [
                 "Finne Bella i parken",
                 "Finne en blå ulltråd på porten",
@@ -3181,7 +3181,7 @@ window.taskDatabase = {
             level: 3,
             type: "sorting",
             passage: "<h3>Sikker på nett – «Nettvett»</h3><p>Internett gir oss tilgang til utrolig mye gøy og nyttig informasjon, men det er også viktig å huske på sikkerheten. Å ha godt nettvett betyr å beskytte seg selv og andre når man er på mobilen eller PC-en. En av de viktigste reglene handler om passord. Et sterkt passord bør inneholde både store og små bokstaver, tall og spesialtegn (som for eksempel ropetegn eller spørsmålstegn). Du må aldri dele passordene dine med andre enn foreldrene dine – ikke en gang med dine beste venner.</p><p>En annen viktig del av nettvett handler om personvern og deling av bilder. Før du deler et bilde av en annen person på nett, må du alltid spørre om lov først. Dette gjelder uansett om det er et bilde av en venn, en søsken eller en lærer. Det er ulovlig å dele bilder av andre uten samtykke. Du bør også være forsiktig med å legge ut personlige opplysninger, som telefonnummeret ditt eller adressen der du bor, på åpne nettsider.</p><p>Til slutt må du huske å være en god venn på nett. Det er lett å si eller skrive ting i en chat som kan oppfattes sårende, fordi man ikke ser ansiktet eller hører stemmen til den man snakker med. Hvis du opplever noe ubehagelig eller ser mobbing på nett, bør du alltid fortelle det til en voksen du stoler på, som en forelder eller en lærer på skolen.</p>",
-            question: "Sorter disse passordene fra det svakeste (til venstre) til det sterkeste (til høyre) basert på nettvettreglene:",
+            question: "Sorter disse passordene fra det svakeste (øverst) til det sterkeste (nederst) basert på nettvettreglene:",
             options: ["Fotball123", "Fotball", "F0tb@ll!23", "123456"],
             correct: ["123456", "Fotball", "Fotball123", "F0tb@ll!23"],
             explanation: "Kun tall (svakest) ➔ kun bokstaver ➔ bokstaver og tall ➔ store/små bokstaver, tall og spesialtegn (sterkest)."
