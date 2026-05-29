@@ -1482,10 +1482,21 @@ const app = {
         }
 
         this.robuxBalance -= amount;
+        
+        // Nullstill øvingsmodus-tellerne ved utbetaling
+        if (this.currentUser) {
+            this.currentUser.practiceRobux = {
+                math: 0,
+                english: 0,
+                reading: 0
+            };
+        }
+
         this.updateRobuxDisplay();
+        this.updateDashboardPracticeStatus();
         this.saveProgress();
         
-        alert("Utbetaling registrert! Saldo er nå: " + this.robuxBalance);
+        alert("Utbetaling registrert og øvingstellerne er nullstilt! Saldo er nå: " + this.robuxBalance);
         input.value = '';
         this.closeAdmin();
     }
