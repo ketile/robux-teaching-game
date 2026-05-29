@@ -67,6 +67,29 @@ const app = {
         } else {
             document.getElementById('main-header').classList.add('hidden');
         }
+
+        if (viewId === 'dashboard') {
+            this.updateDashboardPracticeStatus();
+        }
+    },
+
+    updateDashboardPracticeStatus() {
+        if (!this.currentUser) return;
+        const subjects = ['math', 'english', 'reading'];
+        subjects.forEach(subject => {
+            const el = document.getElementById(`practice-status-${subject}`);
+            if (el) {
+                const practiceRobux = this.currentUser.practiceRobux || { math: 0, english: 0, reading: 0 };
+                const earned = practiceRobux[subject] || 0;
+                if (earned >= 100) {
+                    el.innerText = "Øving: 100 / 100 Robux (Fullført!) 🏆";
+                    el.classList.add('completed');
+                } else {
+                    el.innerText = `Øving: ${earned} / 100 Robux 🌟`;
+                    el.classList.remove('completed');
+                }
+            }
+        });
     },
 
     async login() {
@@ -88,12 +111,16 @@ const app = {
             profile = {
                 username: username,
                 robuxBalance: 0,
-                lifetimeRobux: 0
+                lifetimeRobux: 0,
+                practiceRobux: { math: 0, english: 0, reading: 0 }
             };
             await mockDb.saveProfile(username, profile);
         }
 
         this.currentUser = profile;
+        if (!this.currentUser.practiceRobux) {
+            this.currentUser.practiceRobux = { math: 0, english: 0, reading: 0 };
+        }
         this.robuxBalance = profile.robuxBalance;
         this.lifetimeRobux = profile.lifetimeRobux || 0;
         
@@ -893,27 +920,65 @@ const app = {
             titleObj.innerText = "Riktig! +1 Robux 🎉";
             descObj.innerText = "Fantastisk jobba!";
             
+            const practiceRobux = this.currentUser.practiceRobux || { math: 0, english: 0, reading: 0 };
+            const currentEarned = practiceRobux[this.currentSubject] || 0;
+            const isPractice = this.gameMode === 'practice';
+            const isAlreadyCapped = isPractice && (currentEarned >= 100);
+            
             if (this.streak === 5) {
                 robuxEarned += 2;
                 titleObj.innerText = "5 PÅ RAD! +3 Robux! 🔥";
-                this.showStreakOverlay('streak-5-overlay');
-                this.playSpecialSound('mid');
+                if (!isAlreadyCapped) {
+                    this.showStreakOverlay('streak-5-overlay');
+                    this.playSpecialSound('mid');
+                }
             } else if (this.streak === 10) {
                 robuxEarned += 5;
                 titleObj.innerText = "10 PÅ RAD! +6 Robux! 🌟";
-                this.showStreakOverlay('streak-10-overlay');
-                this.playSpecialSound('high');
+                if (!isAlreadyCapped) {
+                    this.showStreakOverlay('streak-10-overlay');
+                    this.playSpecialSound('high');
+                }
                 this.streak = 0;
             } else {
-                this.playCoinSound();
+                if (!isAlreadyCapped) {
+                    this.playCoinSound();
+                }
             }
             
-            this.robuxBalance += robuxEarned;
-            this.lifetimeRobux += robuxEarned;
-            this.saveProgress();
-            this.updateRobuxDisplay();
+            // Cappingslogikk for øvingsmodus
+            let finalRobuxEarned = robuxEarned;
+            let reachedCapThisTime = false;
+            
+            if (isPractice) {
+                if (currentEarned >= 100) {
+                    finalRobuxEarned = 0;
+                } else if (currentEarned + robuxEarned >= 100) {
+                    finalRobuxEarned = 100 - currentEarned;
+                    reachedCapThisTime = true;
+                }
+                this.currentUser.practiceRobux[this.currentSubject] = currentEarned + finalRobuxEarned;
+            }
+            
+            if (finalRobuxEarned > 0) {
+                this.robuxBalance += finalRobuxEarned;
+                this.lifetimeRobux += finalRobuxEarned;
+                this.saveProgress();
+                this.updateRobuxDisplay();
+                this.playCoinAnimation();
+                
+                if (reachedCapThisTime) {
+                    titleObj.innerText = `Riktig! +${finalRobuxEarned} Robux 🎉`;
+                    descObj.innerText = "Maksgrensen på 100 Robux i øvingsmodus for dette faget er nå nådd! 🏆";
+                }
+            } else {
+                // Ingen Robux tjent pga. maksgrense
+                titleObj.innerText = "Riktig! 🎉";
+                descObj.innerText = "Du har nådd maksgrensen på 100 Robux i øvingsmodus for dette faget. Ta en prøve for å tjene mer! 📝";
+                this.saveProgress();
+            }
+            
             this.updateStreakDisplay();
-            this.playCoinAnimation();
             
             const bank = document.querySelector('.robux-bank');
             bank.classList.remove('bump');
@@ -1389,6 +1454,12 @@ const app = {
         if (!this.currentUser) return;
         document.getElementById('admin-lifetime').innerText = this.lifetimeRobux;
         document.getElementById('admin-current').innerText = this.robuxBalance;
+        
+        const practiceRobux = this.currentUser.practiceRobux || { math: 0, english: 0, reading: 0 };
+        document.getElementById('admin-practice-math').innerText = (practiceRobux.math || 0) + " / 100";
+        document.getElementById('admin-practice-english').innerText = (practiceRobux.english || 0) + " / 100";
+        document.getElementById('admin-practice-reading').innerText = (practiceRobux.reading || 0) + " / 100";
+
         document.getElementById('admin-modal').classList.remove('hidden');
     },
 

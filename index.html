@@ -61,14 +61,17 @@
                 <button class="subject-card subject-math" onclick="app.startGame('math')">
                     <i class="fa-solid fa-calculator"></i>
                     <h3>Regning</h3>
+                    <span id="practice-status-math" class="subject-practice-status">Øving: 0 / 100 Robux</span>
                 </button>
                 <button class="subject-card subject-english" onclick="app.startGame('english')">
                     <i class="fa-solid fa-language"></i>
                     <h3>Engelsk</h3>
+                    <span id="practice-status-english" class="subject-practice-status">Øving: 0 / 100 Robux</span>
                 </button>
                 <button class="subject-card subject-reading" onclick="app.startGame('reading')">
                     <i class="fa-solid fa-book-open"></i>
                     <h3>Lesing</h3>
+                    <span id="practice-status-reading" class="subject-practice-status">Øving: 0 / 100 Robux</span>
                 </button>
             </div>
             
@@ -257,7 +260,16 @@
                     <div class="admin-stat">Totalt opptjent (livstid): <strong id="admin-lifetime">0</strong></div>
                     <div class="admin-stat">Nåværende saldo: <strong id="admin-current">0</strong></div>
                     
-                    <div class="admin-action">
+                    <div class="admin-stat" style="margin-top: 15px; padding-top: 15px; border-top: 2px dashed #eee;">
+                        <strong>Opptjent i øvingsmodus:</strong>
+                        <div style="margin-top: 5px; font-size: 0.95rem; line-height: 1.5;">
+                            Regning: <span id="admin-practice-math">0 / 100</span><br>
+                            Engelsk: <span id="admin-practice-english">0 / 100</span><br>
+                            Lesing: <span id="admin-practice-reading">0 / 100</span>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-action" style="margin-top: 15px; padding-top: 15px; border-top: 2px dashed #eee;">
                         <label>Utbetal Robux:</label>
                         <input type="number" id="payout-amount" placeholder="Antall Robux utbetalt">
                         <button id="btn-payout" class="btn-danger">Registrer Utbetaling</button>
